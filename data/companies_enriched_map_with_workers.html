@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4db6301f67f7f1600208505a7cbd9fbc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4db6301f67f7f1600208505a7cbd9fbc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4db6301f67f7f1600208505a7cbd9fbc = L.map(
+                "map_4db6301f67f7f1600208505a7cbd9fbc",
+                {
+                    center: [38.736946, -9.142685],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ebafcea9fa8ac9a1b26c23abd7d32956 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ebafcea9fa8ac9a1b26c23abd7d32956.addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+            var circle_marker_263e8100124558559ed8405e33070bb7 = L.circleMarker(
+                [38.721723, -9.151904499999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_442498fa262d05259d77da5acf474ddd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f74d6fc4f36f6d32fba32dc19f381142 = $(`<div id="html_f74d6fc4f36f6d32fba32dc19f381142" style="width: 100.0%; height: 100.0%;"><b>Banco BNP Paribas</b><br>Employees: 8000</div>`)[0];
+                popup_442498fa262d05259d77da5acf474ddd.setContent(html_f74d6fc4f36f6d32fba32dc19f381142);
+            
+        
+
+        circle_marker_263e8100124558559ed8405e33070bb7.bindPopup(popup_442498fa262d05259d77da5acf474ddd)
+        ;
+
+        
+    
+    
+            var circle_marker_37efc1ef38494c33ea61685b60666434 = L.circleMarker(
+                [38.708326, -9.150789],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.8, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_87829212864d2ea53c5f8724fe3ce23c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1d31eef4d6c82f2d188342691851105 = $(`<div id="html_a1d31eef4d6c82f2d188342691851105" style="width: 100.0%; height: 100.0%;"><b>Farfetch</b><br>Employees: 6800</div>`)[0];
+                popup_87829212864d2ea53c5f8724fe3ce23c.setContent(html_a1d31eef4d6c82f2d188342691851105);
+            
+        
+
+        circle_marker_37efc1ef38494c33ea61685b60666434.bindPopup(popup_87829212864d2ea53c5f8724fe3ce23c)
+        ;
+
+        
+    
+    
+            var circle_marker_be77e4ea89960fe3337a2f75015bf641 = L.circleMarker(
+                [38.7707773, -9.1040827],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.584, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_1798c578dda35d16dff90a998f83fa4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a13d9ffb17b06ec9f03ae3a8e5deda30 = $(`<div id="html_a13d9ffb17b06ec9f03ae3a8e5deda30" style="width: 100.0%; height: 100.0%;"><b>Bosch</b><br>Employees: 6584</div>`)[0];
+                popup_1798c578dda35d16dff90a998f83fa4d.setContent(html_a13d9ffb17b06ec9f03ae3a8e5deda30);
+            
+        
+
+        circle_marker_be77e4ea89960fe3337a2f75015bf641.bindPopup(popup_1798c578dda35d16dff90a998f83fa4d)
+        ;
+
+        
+    
+    
+            var circle_marker_df7a3f0bd530295ec32e2bbc39c79bb0 = L.circleMarker(
+                [38.7246636, -9.1573161],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_76bcdc62ce2183b0ac2539e4431f527e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f85e4f0a2cc105eb22649e55af6d2b77 = $(`<div id="html_f85e4f0a2cc105eb22649e55af6d2b77" style="width: 100.0%; height: 100.0%;"><b>Deloitte</b><br>Employees: 6000</div>`)[0];
+                popup_76bcdc62ce2183b0ac2539e4431f527e.setContent(html_f85e4f0a2cc105eb22649e55af6d2b77);
+            
+        
+
+        circle_marker_df7a3f0bd530295ec32e2bbc39c79bb0.bindPopup(popup_76bcdc62ce2183b0ac2539e4431f527e)
+        ;
+
+        
+    
+    
+            var circle_marker_bdb05da0bcad056ee5e3e1e721b020e0 = L.circleMarker(
+                [38.7078079, -9.151362899999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_9cf6b8a75d67ea1a9ac107ef206b0533 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f6de20e4c1c5fd939b8022d250fe38d = $(`<div id="html_7f6de20e4c1c5fd939b8022d250fe38d" style="width: 100.0%; height: 100.0%;"><b>Accenture</b><br>Employees: 5300</div>`)[0];
+                popup_9cf6b8a75d67ea1a9ac107ef206b0533.setContent(html_7f6de20e4c1c5fd939b8022d250fe38d);
+            
+        
+
+        circle_marker_bdb05da0bcad056ee5e3e1e721b020e0.bindPopup(popup_9cf6b8a75d67ea1a9ac107ef206b0533)
+        ;
+
+        
+    
+    
+            var circle_marker_549fb06d4299768623571027547d5f27 = L.circleMarker(
+                [38.7372277, -9.2291159],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_e91e4fe29a66cf00b99174725ef96c97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_698cbb791ec1be042cad37e6f9aaa832 = $(`<div id="html_698cbb791ec1be042cad37e6f9aaa832" style="width: 100.0%; height: 100.0%;"><b>Siemens Portugal</b><br>Employees: 4000</div>`)[0];
+                popup_e91e4fe29a66cf00b99174725ef96c97.setContent(html_698cbb791ec1be042cad37e6f9aaa832);
+            
+        
+
+        circle_marker_549fb06d4299768623571027547d5f27.bindPopup(popup_e91e4fe29a66cf00b99174725ef96c97)
+        ;
+
+        
+    
+    
+            var circle_marker_c0d45d0068516ca2816f04ede4477885 = L.circleMarker(
+                [38.753732, -9.187977000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_10bad73daf82dd93a6327d266982d670 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c6718f1897217e3518abefb95e42678 = $(`<div id="html_0c6718f1897217e3518abefb95e42678" style="width: 100.0%; height: 100.0%;"><b>Capgemini Portugal</b><br>Employees: 3600</div>`)[0];
+                popup_10bad73daf82dd93a6327d266982d670.setContent(html_0c6718f1897217e3518abefb95e42678);
+            
+        
+
+        circle_marker_c0d45d0068516ca2816f04ede4477885.bindPopup(popup_10bad73daf82dd93a6327d266982d670)
+        ;
+
+        
+    
+    
+            var circle_marker_2a800d1f4fd70762d6e5aafd5e96ab6e = L.circleMarker(
+                [38.7692419, -9.100040700000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.65, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_925a9422863fceb32e142f1ced654c15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a9b3fffed8a25eec5f4bdfe616d758a = $(`<div id="html_2a9b3fffed8a25eec5f4bdfe616d758a" style="width: 100.0%; height: 100.0%;"><b>Critical Techworks</b><br>Employees: 2650</div>`)[0];
+                popup_925a9422863fceb32e142f1ced654c15.setContent(html_2a9b3fffed8a25eec5f4bdfe616d758a);
+            
+        
+
+        circle_marker_2a800d1f4fd70762d6e5aafd5e96ab6e.bindPopup(popup_925a9422863fceb32e142f1ced654c15)
+        ;
+
+        
+    
+    
+            var circle_marker_44c4b34ca3d30cfdf5eb9de2f7cc8bda = L.circleMarker(
+                [38.7559087, -9.149059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_4d4b632ac5ea4c498c68013acdbaa4b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e65890a70bc20311d5f8e6b5a79740e0 = $(`<div id="html_e65890a70bc20311d5f8e6b5a79740e0" style="width: 100.0%; height: 100.0%;"><b>Natixis em Portugal</b><br>Employees: 2400</div>`)[0];
+                popup_4d4b632ac5ea4c498c68013acdbaa4b0.setContent(html_e65890a70bc20311d5f8e6b5a79740e0);
+            
+        
+
+        circle_marker_44c4b34ca3d30cfdf5eb9de2f7cc8bda.bindPopup(popup_4d4b632ac5ea4c498c68013acdbaa4b0)
+        ;
+
+        
+    
+    
+            var circle_marker_a7fe139db7323df3d6ee99df5c6ad3bf = L.circleMarker(
+                [38.7396654, -9.1485535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.36, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_3c0287c5908077cbd7a9f49ed8e463b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_831e08432b5e8298a5262e08019602f9 = $(`<div id="html_831e08432b5e8298a5262e08019602f9" style="width: 100.0%; height: 100.0%;"><b>PrimeIT</b><br>Employees: 2360</div>`)[0];
+                popup_3c0287c5908077cbd7a9f49ed8e463b0.setContent(html_831e08432b5e8298a5262e08019602f9);
+            
+        
+
+        circle_marker_a7fe139db7323df3d6ee99df5c6ad3bf.bindPopup(popup_3c0287c5908077cbd7a9f49ed8e463b0)
+        ;
+
+        
+    
+    
+            var circle_marker_2c0537ed9d265bb4003c637e7aeeaa39 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_0d108ddd979028b7fe5b6c4805b304ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d377b8dd950dbc3b9cdfe32dfeb3002 = $(`<div id="html_7d377b8dd950dbc3b9cdfe32dfeb3002" style="width: 100.0%; height: 100.0%;"><b>CGI TI Portugal</b><br>Employees: 2000</div>`)[0];
+                popup_0d108ddd979028b7fe5b6c4805b304ac.setContent(html_7d377b8dd950dbc3b9cdfe32dfeb3002);
+            
+        
+
+        circle_marker_2c0537ed9d265bb4003c637e7aeeaa39.bindPopup(popup_0d108ddd979028b7fe5b6c4805b304ac)
+        ;
+
+        
+    
+    
+            var circle_marker_e299e5948209e1cb7ff926c8e7b9f906 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_f64b1b7c514602915004aec24479f6b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f525d84e1fd5a2ccacd6689ba679167b = $(`<div id="html_f525d84e1fd5a2ccacd6689ba679167b" style="width: 100.0%; height: 100.0%;"><b>OutSystems</b><br>Employees: 1700</div>`)[0];
+                popup_f64b1b7c514602915004aec24479f6b9.setContent(html_f525d84e1fd5a2ccacd6689ba679167b);
+            
+        
+
+        circle_marker_e299e5948209e1cb7ff926c8e7b9f906.bindPopup(popup_f64b1b7c514602915004aec24479f6b9)
+        ;
+
+        
+    
+    
+            var circle_marker_31580d151da8c1b36d7dd2ffef26da2a = L.circleMarker(
+                [38.7329252, -9.144656099999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_c615794eb6378e3999cd0647c44b8fd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f23744ccc7c6fb140bda2119c7e7ce38 = $(`<div id="html_f23744ccc7c6fb140bda2119c7e7ce38" style="width: 100.0%; height: 100.0%;"><b>NTT Data</b><br>Employees: 1600</div>`)[0];
+                popup_c615794eb6378e3999cd0647c44b8fd7.setContent(html_f23744ccc7c6fb140bda2119c7e7ce38);
+            
+        
+
+        circle_marker_31580d151da8c1b36d7dd2ffef26da2a.bindPopup(popup_c615794eb6378e3999cd0647c44b8fd7)
+        ;
+
+        
+    
+    
+            var circle_marker_30e5987bacaa3c13bffb1164e5070fcd = L.circleMarker(
+                [38.7717804, -9.0980445],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_d5f93404d9d98f0548fa78e27d33a057 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d38c8726d41d2a94cc1fb84ae92ec81 = $(`<div id="html_3d38c8726d41d2a94cc1fb84ae92ec81" style="width: 100.0%; height: 100.0%;"><b>Devoteam Portugal</b><br>Employees: 1500</div>`)[0];
+                popup_d5f93404d9d98f0548fa78e27d33a057.setContent(html_3d38c8726d41d2a94cc1fb84ae92ec81);
+            
+        
+
+        circle_marker_30e5987bacaa3c13bffb1164e5070fcd.bindPopup(popup_d5f93404d9d98f0548fa78e27d33a057)
+        ;
+
+        
+    
+    
+            var circle_marker_74884ec70ffd4561a9d265fd365a0803 = L.circleMarker(
+                [38.7610168, -9.0944398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_9bd65756bb147f4947a0d2f6e6be6773 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_992545a32f8be3c106d3733d3c15657d = $(`<div id="html_992545a32f8be3c106d3733d3c15657d" style="width: 100.0%; height: 100.0%;"><b>Microsoft Portugal</b><br>Employees: 1500</div>`)[0];
+                popup_9bd65756bb147f4947a0d2f6e6be6773.setContent(html_992545a32f8be3c106d3733d3c15657d);
+            
+        
+
+        circle_marker_74884ec70ffd4561a9d265fd365a0803.bindPopup(popup_9bd65756bb147f4947a0d2f6e6be6773)
+        ;
+
+        
+    
+    
+            var circle_marker_1f7c7f6f4afa72503101bd72217a6f08 = L.circleMarker(
+                [38.7353259, -9.1471758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.45, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_a553f507b4dd868c7e2d8fe1d591dff8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fde4b64864113597d71b2b1f8253ade = $(`<div id="html_2fde4b64864113597d71b2b1f8253ade" style="width: 100.0%; height: 100.0%;"><b>Aubay</b><br>Employees: 1450</div>`)[0];
+                popup_a553f507b4dd868c7e2d8fe1d591dff8.setContent(html_2fde4b64864113597d71b2b1f8253ade);
+            
+        
+
+        circle_marker_1f7c7f6f4afa72503101bd72217a6f08.bindPopup(popup_a553f507b4dd868c7e2d8fe1d591dff8)
+        ;
+
+        
+    
+    
+            var circle_marker_92550f243c3119f47c126c5166ec547f = L.circleMarker(
+                [38.7439488, -9.1485249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.4, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_fa54dbd271325eaa8bc44c3acdfcf610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79bfc271a347e1d1c5a1bdd9152e321a = $(`<div id="html_79bfc271a347e1d1c5a1bdd9152e321a" style="width: 100.0%; height: 100.0%;"><b>Critical Software</b><br>Employees: 1400</div>`)[0];
+                popup_fa54dbd271325eaa8bc44c3acdfcf610.setContent(html_79bfc271a347e1d1c5a1bdd9152e321a);
+            
+        
+
+        circle_marker_92550f243c3119f47c126c5166ec547f.bindPopup(popup_fa54dbd271325eaa8bc44c3acdfcf610)
+        ;
+
+        
+    
+    
+            var circle_marker_114bfd277b6a851bfed10c8364e05897 = L.circleMarker(
+                [38.7453247, -9.1455021],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.325, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_ec847bfa31d784d7fd4a00eae28b7503 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c8ad9a1f0a8db690104d609a5f3fc8d = $(`<div id="html_6c8ad9a1f0a8db690104d609a5f3fc8d" style="width: 100.0%; height: 100.0%;"><b>Novabase</b><br>Employees: 1325</div>`)[0];
+                popup_ec847bfa31d784d7fd4a00eae28b7503.setContent(html_6c8ad9a1f0a8db690104d609a5f3fc8d);
+            
+        
+
+        circle_marker_114bfd277b6a851bfed10c8364e05897.bindPopup(popup_ec847bfa31d784d7fd4a00eae28b7503)
+        ;
+
+        
+    
+    
+            var circle_marker_dbcd6535495c86e71dee3e677db11545 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_43e96441e40f0d4ea9275ccbe48abcaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f0841226bddf6f520cb81209cc0144c = $(`<div id="html_9f0841226bddf6f520cb81209cc0144c" style="width: 100.0%; height: 100.0%;"><b>Mindera</b><br>Employees: 1000</div>`)[0];
+                popup_43e96441e40f0d4ea9275ccbe48abcaf.setContent(html_9f0841226bddf6f520cb81209cc0144c);
+            
+        
+
+        circle_marker_dbcd6535495c86e71dee3e677db11545.bindPopup(popup_43e96441e40f0d4ea9275ccbe48abcaf)
+        ;
+
+        
+    
+    
+            var circle_marker_0c68ff3e6c357df97b1cfd1b91244d47 = L.circleMarker(
+                [38.7571197, -9.174658299999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_c9cd81d822f5265c52f9d68c825b735a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a8a40170b3eb8d3f45ebb573390595f = $(`<div id="html_1a8a40170b3eb8d3f45ebb573390595f" style="width: 100.0%; height: 100.0%;"><b>Noesis</b><br>Employees: 1000</div>`)[0];
+                popup_c9cd81d822f5265c52f9d68c825b735a.setContent(html_1a8a40170b3eb8d3f45ebb573390595f);
+            
+        
+
+        circle_marker_0c68ff3e6c357df97b1cfd1b91244d47.bindPopup(popup_c9cd81d822f5265c52f9d68c825b735a)
+        ;
+
+        
+    
+    
+            var circle_marker_cfe4791b131ee9b294818f44cf155049 = L.circleMarker(
+                [38.7226455, -9.2468931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_67ddcde64601e21f867b329f6263f887 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e16e9b45dfde77d39663d079924b3f54 = $(`<div id="html_e16e9b45dfde77d39663d079924b3f54" style="width: 100.0%; height: 100.0%;"><b>Talkdesk</b><br>Employees: 800</div>`)[0];
+                popup_67ddcde64601e21f867b329f6263f887.setContent(html_e16e9b45dfde77d39663d079924b3f54);
+            
+        
+
+        circle_marker_cfe4791b131ee9b294818f44cf155049.bindPopup(popup_67ddcde64601e21f867b329f6263f887)
+        ;
+
+        
+    
+    
+            var circle_marker_b021488e8d1a16cfd6dd44f296683d4d = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_681e0a9201feb38eb7413cbb35c6feb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea117f39a385b3a024671ba9f774956b = $(`<div id="html_ea117f39a385b3a024671ba9f774956b" style="width: 100.0%; height: 100.0%;"><b>Blip.pt</b><br>Employees: 700</div>`)[0];
+                popup_681e0a9201feb38eb7413cbb35c6feb4.setContent(html_ea117f39a385b3a024671ba9f774956b);
+            
+        
+
+        circle_marker_b021488e8d1a16cfd6dd44f296683d4d.bindPopup(popup_681e0a9201feb38eb7413cbb35c6feb4)
+        ;
+
+        
+    
+    
+            var circle_marker_05d8c90635fdc2199453d01f45edddaf = L.circleMarker(
+                [38.7653129, -9.1001433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_fe8d42d88a8f112a8b073f17d0504349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b19f1b85c23e5c61dc023d1b04a0d05e = $(`<div id="html_b19f1b85c23e5c61dc023d1b04a0d05e" style="width: 100.0%; height: 100.0%;"><b>Feedzai</b><br>Employees: 600</div>`)[0];
+                popup_fe8d42d88a8f112a8b073f17d0504349.setContent(html_b19f1b85c23e5c61dc023d1b04a0d05e);
+            
+        
+
+        circle_marker_05d8c90635fdc2199453d01f45edddaf.bindPopup(popup_fe8d42d88a8f112a8b073f17d0504349)
+        ;
+
+        
+    
+    
+            var circle_marker_75b2417975b530f031c58a044a91bffa = L.circleMarker(
+                [38.7359534, -9.1450172],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_b61eab8e33ca09a903bbb8155d73ef63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a30ff43f1a67a0182f4b5d909acc63f7 = $(`<div id="html_a30ff43f1a67a0182f4b5d909acc63f7" style="width: 100.0%; height: 100.0%;"><b>Alter Solutions Portugal</b><br>Employees: 600</div>`)[0];
+                popup_b61eab8e33ca09a903bbb8155d73ef63.setContent(html_a30ff43f1a67a0182f4b5d909acc63f7);
+            
+        
+
+        circle_marker_75b2417975b530f031c58a044a91bffa.bindPopup(popup_b61eab8e33ca09a903bbb8155d73ef63)
+        ;
+
+        
+    
+    
+            var circle_marker_30862667b094b6b5214b30d6b831a947 = L.circleMarker(
+                [38.7721424, -9.0968122],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_add4258ef020f2f5504bbc4075b87745 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98e1a379abe5cd7f470b1f675f660ac0 = $(`<div id="html_98e1a379abe5cd7f470b1f675f660ac0" style="width: 100.0%; height: 100.0%;"><b>Softinsa</b><br>Employees: 600</div>`)[0];
+                popup_add4258ef020f2f5504bbc4075b87745.setContent(html_98e1a379abe5cd7f470b1f675f660ac0);
+            
+        
+
+        circle_marker_30862667b094b6b5214b30d6b831a947.bindPopup(popup_add4258ef020f2f5504bbc4075b87745)
+        ;
+
+        
+    
+    
+            var circle_marker_a8fdb038b48b6a72091010f50cd8d79e = L.circleMarker(
+                [38.7195384, -9.1569699],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.55, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_35cc0c6d42c12707d2181a42a4452913 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c988f850d56fd2238cc0f70556edc107 = $(`<div id="html_c988f850d56fd2238cc0f70556edc107" style="width: 100.0%; height: 100.0%;"><b>Volkswagen Digital Solutions</b><br>Employees: 550</div>`)[0];
+                popup_35cc0c6d42c12707d2181a42a4452913.setContent(html_c988f850d56fd2238cc0f70556edc107);
+            
+        
+
+        circle_marker_a8fdb038b48b6a72091010f50cd8d79e.bindPopup(popup_35cc0c6d42c12707d2181a42a4452913)
+        ;
+
+        
+    
+    
+            var circle_marker_3e8973de34e34fab2e159d772d0425d8 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_73662f87cd38789cba647fe6f66f8f0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67f8f6f1cc784098e560c9f72774d39d = $(`<div id="html_67f8f6f1cc784098e560c9f72774d39d" style="width: 100.0%; height: 100.0%;"><b>Agap2 IT - Portugal</b><br>Employees: 500</div>`)[0];
+                popup_73662f87cd38789cba647fe6f66f8f0d.setContent(html_67f8f6f1cc784098e560c9f72774d39d);
+            
+        
+
+        circle_marker_3e8973de34e34fab2e159d772d0425d8.bindPopup(popup_73662f87cd38789cba647fe6f66f8f0d)
+        ;
+
+        
+    
+    
+            var circle_marker_9781d357ca9e10b13830e4cf36ea0824 = L.circleMarker(
+                [38.7453921, -9.1455608],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_5f5e13d1930b68ecef6725cd493dbd12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fe33e0e177c491d842e68e06b11489f = $(`<div id="html_5fe33e0e177c491d842e68e06b11489f" style="width: 100.0%; height: 100.0%;"><b>Sky Portugal</b><br>Employees: 500</div>`)[0];
+                popup_5f5e13d1930b68ecef6725cd493dbd12.setContent(html_5fe33e0e177c491d842e68e06b11489f);
+            
+        
+
+        circle_marker_9781d357ca9e10b13830e4cf36ea0824.bindPopup(popup_5f5e13d1930b68ecef6725cd493dbd12)
+        ;
+
+        
+    
+    
+            var circle_marker_edb58114fc2c82bb563f4df485858800 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.45, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_8bfce33af13db27527e1a4fdf8c56910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8feb1a57aa12c1755833e551da3e8a68 = $(`<div id="html_8feb1a57aa12c1755833e551da3e8a68" style="width: 100.0%; height: 100.0%;"><b>Critical Manufacturing</b><br>Employees: 450</div>`)[0];
+                popup_8bfce33af13db27527e1a4fdf8c56910.setContent(html_8feb1a57aa12c1755833e551da3e8a68);
+            
+        
+
+        circle_marker_edb58114fc2c82bb563f4df485858800.bindPopup(popup_8bfce33af13db27527e1a4fdf8c56910)
+        ;
+
+        
+    
+    
+            var circle_marker_79d64105a436ecd018f03d9198e30386 = L.circleMarker(
+                [38.7287221, -9.1462217],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.41, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_71d9572008e41eaba5856b114f840672 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8694b4c7b922f447055e42f6992daa74 = $(`<div id="html_8694b4c7b922f447055e42f6992daa74" style="width: 100.0%; height: 100.0%;"><b>KCS IT</b><br>Employees: 410</div>`)[0];
+                popup_71d9572008e41eaba5856b114f840672.setContent(html_8694b4c7b922f447055e42f6992daa74);
+            
+        
+
+        circle_marker_79d64105a436ecd018f03d9198e30386.bindPopup(popup_71d9572008e41eaba5856b114f840672)
+        ;
+
+        
+    
+    
+            var circle_marker_4684906234d672d79a9abf52d0ffd00d = L.circleMarker(
+                [38.7712933, -9.097969899999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_13c1691a8a87a44d2e0025d7b7c6a28e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d088e6eb5239124f5138611fe5ce161 = $(`<div id="html_6d088e6eb5239124f5138611fe5ce161" style="width: 100.0%; height: 100.0%;"><b>Mercedez-Benz.io</b><br>Employees: 300</div>`)[0];
+                popup_13c1691a8a87a44d2e0025d7b7c6a28e.setContent(html_6d088e6eb5239124f5138611fe5ce161);
+            
+        
+
+        circle_marker_4684906234d672d79a9abf52d0ffd00d.bindPopup(popup_13c1691a8a87a44d2e0025d7b7c6a28e)
+        ;
+
+        
+    
+    
+            var circle_marker_ef1424f4e4c9c2bb9e8dc9036a6c273b = L.circleMarker(
+                [38.7305167, -9.148325000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.25, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_1625cb6832b9e29933fc345430d6e120 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_298c66b8c732aae3b7f4fc44f8421329 = $(`<div id="html_298c66b8c732aae3b7f4fc44f8421329" style="width: 100.0%; height: 100.0%;"><b>Smart Consulting</b><br>Employees: 250</div>`)[0];
+                popup_1625cb6832b9e29933fc345430d6e120.setContent(html_298c66b8c732aae3b7f4fc44f8421329);
+            
+        
+
+        circle_marker_ef1424f4e4c9c2bb9e8dc9036a6c273b.bindPopup(popup_1625cb6832b9e29933fc345430d6e120)
+        ;
+
+        
+    
+    
+            var circle_marker_54fa4f957a87c5b6e1d693aaba1d5413 = L.circleMarker(
+                [38.7287808, -9.146221599999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.241, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_4b5ef4cc76472a250a58ee7444620973 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f802ed9876eec5b46927762410e8d9d0 = $(`<div id="html_f802ed9876eec5b46927762410e8d9d0" style="width: 100.0%; height: 100.0%;"><b>Adentis Portugal</b><br>Employees: 241</div>`)[0];
+                popup_4b5ef4cc76472a250a58ee7444620973.setContent(html_f802ed9876eec5b46927762410e8d9d0);
+            
+        
+
+        circle_marker_54fa4f957a87c5b6e1d693aaba1d5413.bindPopup(popup_4b5ef4cc76472a250a58ee7444620973)
+        ;
+
+        
+    
+    
+            var circle_marker_4a845fc11a150ac57e04da8aed05b4cb = L.circleMarker(
+                [38.7326826, -9.1522724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.064, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_f4171f394ebbeefa36da0044fdb3500a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a2dedd46ee2470cfadd8624c274a5ae = $(`<div id="html_0a2dedd46ee2470cfadd8624c274a5ae" style="width: 100.0%; height: 100.0%;"><b>Imaginary Cloud</b><br>Employees: 64</div>`)[0];
+                popup_f4171f394ebbeefa36da0044fdb3500a.setContent(html_0a2dedd46ee2470cfadd8624c274a5ae);
+            
+        
+
+        circle_marker_4a845fc11a150ac57e04da8aed05b4cb.bindPopup(popup_f4171f394ebbeefa36da0044fdb3500a)
+        ;
+
+        
+    
+    
+            var circle_marker_4d7834704e2643aa09a8f80bc59e6d78 = L.circleMarker(
+                [38.72873, -9.1462405],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_335191d40f9a20a6e2dc7e7dd0d3f207 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_966dcc0358d2c647f2e2ff4faf4e28b1 = $(`<div id="html_966dcc0358d2c647f2e2ff4faf4e28b1" style="width: 100.0%; height: 100.0%;"><b>Bee Engineering</b><br>Employees: 200</div>`)[0];
+                popup_335191d40f9a20a6e2dc7e7dd0d3f207.setContent(html_966dcc0358d2c647f2e2ff4faf4e28b1);
+            
+        
+
+        circle_marker_4d7834704e2643aa09a8f80bc59e6d78.bindPopup(popup_335191d40f9a20a6e2dc7e7dd0d3f207)
+        ;
+
+        
+    
+    
+            var circle_marker_9339c83dc5a66544830e07236157c91a = L.circleMarker(
+                [38.7613896, -9.0989041],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.35, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_1852506da9bbbc042acf44e22bfaa19d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5356053c8390b61273b041271a07f59e = $(`<div id="html_5356053c8390b61273b041271a07f59e" style="width: 100.0%; height: 100.0%;"><b>Xpand IT</b><br>Employees: 350</div>`)[0];
+                popup_1852506da9bbbc042acf44e22bfaa19d.setContent(html_5356053c8390b61273b041271a07f59e);
+            
+        
+
+        circle_marker_9339c83dc5a66544830e07236157c91a.bindPopup(popup_1852506da9bbbc042acf44e22bfaa19d)
+        ;
+
+        
+    
+    
+            var circle_marker_e29c59f18d414127662d86447ccc1e7a = L.circleMarker(
+                [38.73293779999999, -9.144652599999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_e61ba91e19494316c6518e16b3d82cd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_719b1d17ab3d9aa1f1bb7c2000b5ba4e = $(`<div id="html_719b1d17ab3d9aa1f1bb7c2000b5ba4e" style="width: 100.0%; height: 100.0%;"><b>ITSector</b><br>Employees: 600</div>`)[0];
+                popup_e61ba91e19494316c6518e16b3d82cd1.setContent(html_719b1d17ab3d9aa1f1bb7c2000b5ba4e);
+            
+        
+
+        circle_marker_e29c59f18d414127662d86447ccc1e7a.bindPopup(popup_e61ba91e19494316c6518e16b3d82cd1)
+        ;
+
+        
+    
+    
+            var circle_marker_68dcc3bdd4be1088739815b42cce88c8 = L.circleMarker(
+                [38.7710415, -9.0958133],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.35, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_18602395cf07ff3e1d3f6f84eb3d88ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f16ce9ae994b6a0488f3f6e27e600d0 = $(`<div id="html_7f16ce9ae994b6a0488f3f6e27e600d0" style="width: 100.0%; height: 100.0%;"><b>WIT Software</b><br>Employees: 350</div>`)[0];
+                popup_18602395cf07ff3e1d3f6f84eb3d88ca.setContent(html_7f16ce9ae994b6a0488f3f6e27e600d0);
+            
+        
+
+        circle_marker_68dcc3bdd4be1088739815b42cce88c8.bindPopup(popup_18602395cf07ff3e1d3f6f84eb3d88ca)
+        ;
+
+        
+    
+    
+            var circle_marker_433df82adc3f5118a7d295ae1c454e07 = L.circleMarker(
+                [38.7426715, -9.147359],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.4, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_93768cb91b94ff40fb9c131794a9d02f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0145b32e170c5b5909acf39ad45a24ed = $(`<div id="html_0145b32e170c5b5909acf39ad45a24ed" style="width: 100.0%; height: 100.0%;"><b>Axians</b><br>Employees: 1400</div>`)[0];
+                popup_93768cb91b94ff40fb9c131794a9d02f.setContent(html_0145b32e170c5b5909acf39ad45a24ed);
+            
+        
+
+        circle_marker_433df82adc3f5118a7d295ae1c454e07.bindPopup(popup_93768cb91b94ff40fb9c131794a9d02f)
+        ;
+
+        
+    
+    
+            var circle_marker_29b667ac02a8cba8c72fa8f7b374322b = L.circleMarker(
+                [38.7290699, -9.1442335],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_c7a43c118c8baea7f61df7e12a3d7184 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af64ed834bf33fd1241e616397b1d3d6 = $(`<div id="html_af64ed834bf33fd1241e616397b1d3d6" style="width: 100.0%; height: 100.0%;"><b>Inetum</b><br>Employees: 2700</div>`)[0];
+                popup_c7a43c118c8baea7f61df7e12a3d7184.setContent(html_af64ed834bf33fd1241e616397b1d3d6);
+            
+        
+
+        circle_marker_29b667ac02a8cba8c72fa8f7b374322b.bindPopup(popup_c7a43c118c8baea7f61df7e12a3d7184)
+        ;
+
+        
+    
+    
+            var circle_marker_3537c7820d5568fbeb6c23a5b95dc4f1 = L.circleMarker(
+                [38.7353259, -9.1469525],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_33363305686db519066b78710077c3e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67898eda2ac42ede3084041a9181aa60 = $(`<div id="html_67898eda2ac42ede3084041a9181aa60" style="width: 100.0%; height: 100.0%;"><b>Kwan</b><br>Employees: 300</div>`)[0];
+                popup_33363305686db519066b78710077c3e5.setContent(html_67898eda2ac42ede3084041a9181aa60);
+            
+        
+
+        circle_marker_3537c7820d5568fbeb6c23a5b95dc4f1.bindPopup(popup_33363305686db519066b78710077c3e5)
+        ;
+
+        
+    
+    
+            var circle_marker_79ffa9bc7daf0ddab142585f1dec4fd9 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_a7467853fa7e3f92d7dc9e98c0cb659e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21171bbb8587f5a7390f59502e1e95f3 = $(`<div id="html_21171bbb8587f5a7390f59502e1e95f3" style="width: 100.0%; height: 100.0%;"><b>EDP</b><br>Employees: 5000</div>`)[0];
+                popup_a7467853fa7e3f92d7dc9e98c0cb659e.setContent(html_21171bbb8587f5a7390f59502e1e95f3);
+            
+        
+
+        circle_marker_79ffa9bc7daf0ddab142585f1dec4fd9.bindPopup(popup_a7467853fa7e3f92d7dc9e98c0cb659e)
+        ;
+
+        
+    
+    
+            var circle_marker_6d679ee8ee768a924e3604dbcd856a2f = L.circleMarker(
+                [38.7397419, -9.1486137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.37, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_ff9738ba032966fc2f65e30b46c875f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cee5894882a6c757df01511839b76e4b = $(`<div id="html_cee5894882a6c757df01511839b76e4b" style="width: 100.0%; height: 100.0%;"><b>Affinity</b><br>Employees: 370</div>`)[0];
+                popup_ff9738ba032966fc2f65e30b46c875f6.setContent(html_cee5894882a6c757df01511839b76e4b);
+            
+        
+
+        circle_marker_6d679ee8ee768a924e3604dbcd856a2f.bindPopup(popup_ff9738ba032966fc2f65e30b46c875f6)
+        ;
+
+        
+    
+    
+            var circle_marker_85799ec66785d1a1eaecc9ef3e922ad6 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_bb57ee65fe04f0f117e33bb8cbe2cc5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01559435154c8210e127f068e47626e2 = $(`<div id="html_01559435154c8210e127f068e47626e2" style="width: 100.0%; height: 100.0%;"><b>Claranet portugal</b><br>Employees: 900</div>`)[0];
+                popup_bb57ee65fe04f0f117e33bb8cbe2cc5c.setContent(html_01559435154c8210e127f068e47626e2);
+            
+        
+
+        circle_marker_85799ec66785d1a1eaecc9ef3e922ad6.bindPopup(popup_bb57ee65fe04f0f117e33bb8cbe2cc5c)
+        ;
+
+        
+    
+    
+            var circle_marker_cca6c54cee1b3a15032f6072747edf90 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.05, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_595a8cf8daff07d5c09525d43ceb829b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b9cdd55474c60d913a1fd5c9514d164 = $(`<div id="html_7b9cdd55474c60d913a1fd5c9514d164" style="width: 100.0%; height: 100.0%;"><b>Intellias</b><br>Employees: 50</div>`)[0];
+                popup_595a8cf8daff07d5c09525d43ceb829b.setContent(html_7b9cdd55474c60d913a1fd5c9514d164);
+            
+        
+
+        circle_marker_cca6c54cee1b3a15032f6072747edf90.bindPopup(popup_595a8cf8daff07d5c09525d43ceb829b)
+        ;
+
+        
+    
+    
+            var circle_marker_190a764046bf1072aaa0d03acfe1ca48 = L.circleMarker(
+                [38.768811, -9.0961404],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.12, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_7b9873837fed48bb184d38f9112cf7d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d35cd1db4e7ceb92a50fac3e7dc8f011 = $(`<div id="html_d35cd1db4e7ceb92a50fac3e7dc8f011" style="width: 100.0%; height: 100.0%;"><b>Red IT</b><br>Employees: 120</div>`)[0];
+                popup_7b9873837fed48bb184d38f9112cf7d4.setContent(html_d35cd1db4e7ceb92a50fac3e7dc8f011);
+            
+        
+
+        circle_marker_190a764046bf1072aaa0d03acfe1ca48.bindPopup(popup_7b9873837fed48bb184d38f9112cf7d4)
+        ;
+
+        
+    
+    
+            var circle_marker_d304195a02eeeb6dbccb5ef7ac89b9df = L.circleMarker(
+                [38.7180433, -9.144623],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.35, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_bb1f5ced2e9217124c8386a91bdf6e90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52ec52100c6209ec47ccf01bd7789217 = $(`<div id="html_52ec52100c6209ec47ccf01bd7789217" style="width: 100.0%; height: 100.0%;"><b>Sword Health</b><br>Employees: 350</div>`)[0];
+                popup_bb1f5ced2e9217124c8386a91bdf6e90.setContent(html_52ec52100c6209ec47ccf01bd7789217);
+            
+        
+
+        circle_marker_d304195a02eeeb6dbccb5ef7ac89b9df.bindPopup(popup_bb1f5ced2e9217124c8386a91bdf6e90)
+        ;
+
+        
+    
+    
+            var circle_marker_05089c400d4c952166dc97672bcc3055 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_e2928ad8290b1a6e0549cb7865e4624d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48131529a43bc6f23e0aafea95c481bd = $(`<div id="html_48131529a43bc6f23e0aafea95c481bd" style="width: 100.0%; height: 100.0%;"><b>Prozis</b><br>Employees: 1500</div>`)[0];
+                popup_e2928ad8290b1a6e0549cb7865e4624d.setContent(html_48131529a43bc6f23e0aafea95c481bd);
+            
+        
+
+        circle_marker_05089c400d4c952166dc97672bcc3055.bindPopup(popup_e2928ad8290b1a6e0549cb7865e4624d)
+        ;
+
+        
+    
+    
+            var circle_marker_23611e6281137f4c3290a68ca75fd141 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.22, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_92ffb9e963a074ebadbd34b608a0f7d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3b0d31934eee1019a6bceb9d6d1edc5 = $(`<div id="html_a3b0d31934eee1019a6bceb9d6d1edc5" style="width: 100.0%; height: 100.0%;"><b>Wellhub (anteriormente Gympass)</b><br>Employees: 220</div>`)[0];
+                popup_92ffb9e963a074ebadbd34b608a0f7d8.setContent(html_a3b0d31934eee1019a6bceb9d6d1edc5);
+            
+        
+
+        circle_marker_23611e6281137f4c3290a68ca75fd141.bindPopup(popup_92ffb9e963a074ebadbd34b608a0f7d8)
+        ;
+
+        
+    
+    
+            var circle_marker_83320e27a13068232c82dd5a6784c76f = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_ea8917a1ee4ceb78458c74d0b5694748 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f510a245e60fb8c3dd46117a1609f95 = $(`<div id="html_3f510a245e60fb8c3dd46117a1609f95" style="width: 100.0%; height: 100.0%;"><b>Nokia Networks Portugal</b><br>Employees: 2000</div>`)[0];
+                popup_ea8917a1ee4ceb78458c74d0b5694748.setContent(html_3f510a245e60fb8c3dd46117a1609f95);
+            
+        
+
+        circle_marker_83320e27a13068232c82dd5a6784c76f.bindPopup(popup_ea8917a1ee4ceb78458c74d0b5694748)
+        ;
+
+        
+    
+    
+            var circle_marker_e9abeb7bd92250ba52de873e2233d627 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_81b07bd86e85bd189939158b31933a27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27ec1409e69a2acb55acf6f562c1f371 = $(`<div id="html_27ec1409e69a2acb55acf6f562c1f371" style="width: 100.0%; height: 100.0%;"><b>Glintt Global</b><br>Employees: 1200</div>`)[0];
+                popup_81b07bd86e85bd189939158b31933a27.setContent(html_27ec1409e69a2acb55acf6f562c1f371);
+            
+        
+
+        circle_marker_e9abeb7bd92250ba52de873e2233d627.bindPopup(popup_81b07bd86e85bd189939158b31933a27)
+        ;
+
+        
+    
+    
+            var circle_marker_8ab5cefb2cbfa5d18f8c78c298189eb5 = L.circleMarker(
+                [38.7327592, -9.1444116],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_fa8db008ad3e7992eaf23fb9e5aa116a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e8d3bdab181abb4297b9e2eda783f15 = $(`<div id="html_9e8d3bdab181abb4297b9e2eda783f15" style="width: 100.0%; height: 100.0%;"><b>OLX</b><br>Employees: 300</div>`)[0];
+                popup_fa8db008ad3e7992eaf23fb9e5aa116a.setContent(html_9e8d3bdab181abb4297b9e2eda783f15);
+            
+        
+
+        circle_marker_8ab5cefb2cbfa5d18f8c78c298189eb5.bindPopup(popup_fa8db008ad3e7992eaf23fb9e5aa116a)
+        ;
+
+        
+    
+    
+            var circle_marker_07cb3e1cd9aa29111c3ad052463f7c13 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.13, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_335d898c3c50a4ad04139261f1215ed9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dd09281b6119c8e2daaab6e31ac9498 = $(`<div id="html_4dd09281b6119c8e2daaab6e31ac9498" style="width: 100.0%; height: 100.0%;"><b>Kuehne+Nagel</b><br>Employees: 130</div>`)[0];
+                popup_335d898c3c50a4ad04139261f1215ed9.setContent(html_4dd09281b6119c8e2daaab6e31ac9498);
+            
+        
+
+        circle_marker_07cb3e1cd9aa29111c3ad052463f7c13.bindPopup(popup_335d898c3c50a4ad04139261f1215ed9)
+        ;
+
+        
+    
+    
+            var circle_marker_cc103493c7dd1b0f6c0b6a2bd0191f71 = L.circleMarker(
+                [38.7448005, -9.1523562],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.35, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_8ad3f7acedbec0a765abf20851e9b0b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4def2fd82965cdf11ad560f80622d70 = $(`<div id="html_e4def2fd82965cdf11ad560f80622d70" style="width: 100.0%; height: 100.0%;"><b>Integer Consulting</b><br>Employees: 350</div>`)[0];
+                popup_8ad3f7acedbec0a765abf20851e9b0b7.setContent(html_e4def2fd82965cdf11ad560f80622d70);
+            
+        
+
+        circle_marker_cc103493c7dd1b0f6c0b6a2bd0191f71.bindPopup(popup_8ad3f7acedbec0a765abf20851e9b0b7)
+        ;
+
+        
+    
+    
+            var circle_marker_376cbc9706cc1de266f990157d4d4b0b = L.circleMarker(
+                [38.7367432, -9.3043835],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.262, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_0a85a32db59feca41974951d154f0f5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef18a82c993c3e520be5db1e91daee32 = $(`<div id="html_ef18a82c993c3e520be5db1e91daee32" style="width: 100.0%; height: 100.0%;"><b>PHC Software</b><br>Employees: 262</div>`)[0];
+                popup_0a85a32db59feca41974951d154f0f5d.setContent(html_ef18a82c993c3e520be5db1e91daee32);
+            
+        
+
+        circle_marker_376cbc9706cc1de266f990157d4d4b0b.bindPopup(popup_0a85a32db59feca41974951d154f0f5d)
+        ;
+
+        
+    
+    
+            var circle_marker_9e1ded05d6875f3f4000b7809464236e = L.circleMarker(
+                [38.7380003, -9.1670844],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_5db24d2f823392e58f79c847a49c5cb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f78ff741269b5715d1c53d7d23500613 = $(`<div id="html_f78ff741269b5715d1c53d7d23500613" style="width: 100.0%; height: 100.0%;"><b>Decskill</b><br>Employees: 300</div>`)[0];
+                popup_5db24d2f823392e58f79c847a49c5cb4.setContent(html_f78ff741269b5715d1c53d7d23500613);
+            
+        
+
+        circle_marker_9e1ded05d6875f3f4000b7809464236e.bindPopup(popup_5db24d2f823392e58f79c847a49c5cb4)
+        ;
+
+        
+    
+    
+            var circle_marker_d59f6b039c7cdf9a96b8cdbdc10a6c65 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_bc3cff389655184a0d97010cade57236 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96f75aae8a8ee4cd655f0b907606df5d = $(`<div id="html_96f75aae8a8ee4cd655f0b907606df5d" style="width: 100.0%; height: 100.0%;"><b>Revolut</b><br>Employees: 1300</div>`)[0];
+                popup_bc3cff389655184a0d97010cade57236.setContent(html_96f75aae8a8ee4cd655f0b907606df5d);
+            
+        
+
+        circle_marker_d59f6b039c7cdf9a96b8cdbdc10a6c65.bindPopup(popup_bc3cff389655184a0d97010cade57236)
+        ;
+
+        
+    
+    
+            var circle_marker_b45f16ee26e26ada42d985ebe3341f55 = L.circleMarker(
+                [38.7306314, -9.1483907],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.16, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_a0a8688e65a061d22de7e33b1f9118bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d56e1863550df2bbb5e0734c57aa9e0 = $(`<div id="html_2d56e1863550df2bbb5e0734c57aa9e0" style="width: 100.0%; height: 100.0%;"><b>Innotech.pt</b><br>Employees: 160</div>`)[0];
+                popup_a0a8688e65a061d22de7e33b1f9118bb.setContent(html_2d56e1863550df2bbb5e0734c57aa9e0);
+            
+        
+
+        circle_marker_b45f16ee26e26ada42d985ebe3341f55.bindPopup(popup_a0a8688e65a061d22de7e33b1f9118bb)
+        ;
+
+        
+    
+    
+            var circle_marker_1f3b8abd71f02b5dca011e02790fb5f6 = L.circleMarker(
+                [38.7018409, -9.17687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.34, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_ccb4d66703cf6773c4025879ac7ed84a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90968e9a4ad0de9950e2cce7fe033a7f = $(`<div id="html_90968e9a4ad0de9950e2cce7fe033a7f" style="width: 100.0%; height: 100.0%;"><b>Cloudfare</b><br>Employees: 340</div>`)[0];
+                popup_ccb4d66703cf6773c4025879ac7ed84a.setContent(html_90968e9a4ad0de9950e2cce7fe033a7f);
+            
+        
+
+        circle_marker_1f3b8abd71f02b5dca011e02790fb5f6.bindPopup(popup_ccb4d66703cf6773c4025879ac7ed84a)
+        ;
+
+        
+    
+    
+            var circle_marker_c20c02e4209873196ae31b226779de70 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_1fed7bc077e91eb6ae5fe23cfe3f4f0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ee9c0352eac6bb1286001bb9ec87edc = $(`<div id="html_7ee9c0352eac6bb1286001bb9ec87edc" style="width: 100.0%; height: 100.0%;"><b>Olisipo</b><br>Employees: 700</div>`)[0];
+                popup_1fed7bc077e91eb6ae5fe23cfe3f4f0f.setContent(html_7ee9c0352eac6bb1286001bb9ec87edc);
+            
+        
+
+        circle_marker_c20c02e4209873196ae31b226779de70.bindPopup(popup_1fed7bc077e91eb6ae5fe23cfe3f4f0f)
+        ;
+
+        
+    
+    
+            var circle_marker_891201e046d13f791c21800254956076 = L.circleMarker(
+                [38.7447092, -9.1599878],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.184, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_ee673582d3b29b7efd861cc6814e5775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f812d02243843973686c8ada2b085710 = $(`<div id="html_f812d02243843973686c8ada2b085710" style="width: 100.0%; height: 100.0%;"><b>Multivision</b><br>Employees: 184</div>`)[0];
+                popup_ee673582d3b29b7efd861cc6814e5775.setContent(html_f812d02243843973686c8ada2b085710);
+            
+        
+
+        circle_marker_891201e046d13f791c21800254956076.bindPopup(popup_ee673582d3b29b7efd861cc6814e5775)
+        ;
+
+        
+    
+    
+            var circle_marker_3230b2698a3c001b1407cde6ad9dc125 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.7, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_38e36ee1c9a3eef40af16b17eb8a3b0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d624fbf348c762c0b393544580e8cf63 = $(`<div id="html_d624fbf348c762c0b393544580e8cf63" style="width: 100.0%; height: 100.0%;"><b>Banco de Portugal</b><br>Employees: 1700</div>`)[0];
+                popup_38e36ee1c9a3eef40af16b17eb8a3b0f.setContent(html_d624fbf348c762c0b393544580e8cf63);
+            
+        
+
+        circle_marker_3230b2698a3c001b1407cde6ad9dc125.bindPopup(popup_38e36ee1c9a3eef40af16b17eb8a3b0f)
+        ;
+
+        
+    
+    
+            var circle_marker_c464837758a7e45db0fe8a5081f593b1 = L.circleMarker(
+                [38.728527, -9.1468019],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_4312088c5c51be6a59746b630e014f65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87738c69cf2ff1add52a27094acbd427 = $(`<div id="html_87738c69cf2ff1add52a27094acbd427" style="width: 100.0%; height: 100.0%;"><b>PwC Portugal</b><br>Employees: 2900</div>`)[0];
+                popup_4312088c5c51be6a59746b630e014f65.setContent(html_87738c69cf2ff1add52a27094acbd427);
+            
+        
+
+        circle_marker_c464837758a7e45db0fe8a5081f593b1.bindPopup(popup_4312088c5c51be6a59746b630e014f65)
+        ;
+
+        
+    
+    
+            var circle_marker_fbde168cdcb32c6f9364698f935bc8e7 = L.circleMarker(
+                [38.7579976, -9.1405903],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_358273a029d86df7be31422bb10fff7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a15c4ee49a2ca179a0e37ff0409a1311 = $(`<div id="html_a15c4ee49a2ca179a0e37ff0409a1311" style="width: 100.0%; height: 100.0%;"><b>Altice Labs</b><br>Employees: 700</div>`)[0];
+                popup_358273a029d86df7be31422bb10fff7a.setContent(html_a15c4ee49a2ca179a0e37ff0409a1311);
+            
+        
+
+        circle_marker_fbde168cdcb32c6f9364698f935bc8e7.bindPopup(popup_358273a029d86df7be31422bb10fff7a)
+        ;
+
+        
+    
+    
+            var circle_marker_3c67cb1d6b904654ae9f10fe2abf06dc = L.circleMarker(
+                [38.7404546, -9.229695099999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_f5b6b091bf135f2cb8e089cf80cd106f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2004ad7c204a9ca8f43013df94793845 = $(`<div id="html_2004ad7c204a9ca8f43013df94793845" style="width: 100.0%; height: 100.0%;"><b>Syone</b><br>Employees: 200</div>`)[0];
+                popup_f5b6b091bf135f2cb8e089cf80cd106f.setContent(html_2004ad7c204a9ca8f43013df94793845);
+            
+        
+
+        circle_marker_3c67cb1d6b904654ae9f10fe2abf06dc.bindPopup(popup_f5b6b091bf135f2cb8e089cf80cd106f)
+        ;
+
+        
+    
+    
+            var circle_marker_570754314370e033d2602cdc35b7b4f5 = L.circleMarker(
+                [38.7110179, -9.1424372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.13, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_61dcb067c85a17467cac0a2d4e46837c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e2227fb0c22fc1e1111dc1b0cff5c5f = $(`<div id="html_7e2227fb0c22fc1e1111dc1b0cff5c5f" style="width: 100.0%; height: 100.0%;"><b>tb.lx</b><br>Employees: 130</div>`)[0];
+                popup_61dcb067c85a17467cac0a2d4e46837c.setContent(html_7e2227fb0c22fc1e1111dc1b0cff5c5f);
+            
+        
+
+        circle_marker_570754314370e033d2602cdc35b7b4f5.bindPopup(popup_61dcb067c85a17467cac0a2d4e46837c)
+        ;
+
+        
+    
+    
+            var circle_marker_d10761d7b7364edaf34e77f039a213db = L.circleMarker(
+                [38.7233826, -9.1633661],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_9c5fb4952be9a1b297fb5800ffb41d6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaa59ac5e199c0c1a72cf7ea006afaf9 = $(`<div id="html_aaa59ac5e199c0c1a72cf7ea006afaf9" style="width: 100.0%; height: 100.0%;"><b>NOS</b><br>Employees: 2400</div>`)[0];
+                popup_9c5fb4952be9a1b297fb5800ffb41d6f.setContent(html_aaa59ac5e199c0c1a72cf7ea006afaf9);
+            
+        
+
+        circle_marker_d10761d7b7364edaf34e77f039a213db.bindPopup(popup_9c5fb4952be9a1b297fb5800ffb41d6f)
+        ;
+
+        
+    
+    
+            var circle_marker_b8d64859c304f4e8f73368394496b4ec = L.circleMarker(
+                [38.76369, -9.098339900000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_2bd4df8d7dd728eba10c83698abdb013 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f181e1417e0b0cb90ba08c4c6d546b3d = $(`<div id="html_f181e1417e0b0cb90ba08c4c6d546b3d" style="width: 100.0%; height: 100.0%;"><b>HN Services</b><br>Employees: 200</div>`)[0];
+                popup_2bd4df8d7dd728eba10c83698abdb013.setContent(html_f181e1417e0b0cb90ba08c4c6d546b3d);
+            
+        
+
+        circle_marker_b8d64859c304f4e8f73368394496b4ec.bindPopup(popup_2bd4df8d7dd728eba10c83698abdb013)
+        ;
+
+        
+    
+    
+            var circle_marker_bb7f1b64e354ec07d8a2c56fce749a40 = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.175, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_9ae002de7ed0b1c9b0bc89ec02b51036 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d97cd1c523c3c1d6fab9bce4e036c91c = $(`<div id="html_d97cd1c523c3c1d6fab9bce4e036c91c" style="width: 100.0%; height: 100.0%;"><b>360 Imprimir</b><br>Employees: 175</div>`)[0];
+                popup_9ae002de7ed0b1c9b0bc89ec02b51036.setContent(html_d97cd1c523c3c1d6fab9bce4e036c91c);
+            
+        
+
+        circle_marker_bb7f1b64e354ec07d8a2c56fce749a40.bindPopup(popup_9ae002de7ed0b1c9b0bc89ec02b51036)
+        ;
+
+        
+    
+    
+            var circle_marker_4e460deef408b7e5a5eda89ea79132f4 = L.circleMarker(
+                [38.70433939999999, -9.1677674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_d171f2929232ee8c14aec1d428e6c2c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_936999c36cf9e62519a6288a4b7d2b61 = $(`<div id="html_936999c36cf9e62519a6288a4b7d2b61" style="width: 100.0%; height: 100.0%;"><b>TIMWETECH</b><br>Employees: 600</div>`)[0];
+                popup_d171f2929232ee8c14aec1d428e6c2c3.setContent(html_936999c36cf9e62519a6288a4b7d2b61);
+            
+        
+
+        circle_marker_4e460deef408b7e5a5eda89ea79132f4.bindPopup(popup_d171f2929232ee8c14aec1d428e6c2c3)
+        ;
+
+        
+    
+    
+            var circle_marker_23eb7cb4f03cb7625c7ef0de44c4daec = L.circleMarker(
+                [38.7222524, -9.1393366],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.277, "stroke": true, "weight": 3}
+            ).addTo(map_4db6301f67f7f1600208505a7cbd9fbc);
+        
+    
+        var popup_0908ee5a3ab554fbf0be4140fff98871 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1487da3f308384d98d14263cc97e949a = $(`<div id="html_1487da3f308384d98d14263cc97e949a" style="width: 100.0%; height: 100.0%;"><b>Miniclip</b><br>Employees: 277</div>`)[0];
+                popup_0908ee5a3ab554fbf0be4140fff98871.setContent(html_1487da3f308384d98d14263cc97e949a);
+            
+        
+
+        circle_marker_23eb7cb4f03cb7625c7ef0de44c4daec.bindPopup(popup_0908ee5a3ab554fbf0be4140fff98871)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,2796 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3533665a7043b88499e10cb7e20cfad5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3533665a7043b88499e10cb7e20cfad5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3533665a7043b88499e10cb7e20cfad5 = L.map(
+                "map_3533665a7043b88499e10cb7e20cfad5",
+                {
+                    center: [38.736946, -9.142685],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_75de02a1a491cfe103efa890207f42ae = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_75de02a1a491cfe103efa890207f42ae.addTo(map_3533665a7043b88499e10cb7e20cfad5);
+        
+    
+            var marker_cluster_8f12a700bee62c35da810c7e6f440be8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_172215e45f334e73458e6ef971a549ca = L.marker(
+                [38.721723, -9.151904499999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_b7bc0696621de1e53dd2234ede40220a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0055cd370e8300b722f8a189f19f975 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_333fea91bf6910484ca338a0a3b7640c = $(`<div id="html_333fea91bf6910484ca338a0a3b7640c" style="width: 100.0%; height: 100.0%;"><b>Banco BNP Paribas</b><br>Address: R. Alexandre Herculano 50, 1250-051 Lisboa, Portugal<br>Employees: 8000</div>`)[0];
+                popup_f0055cd370e8300b722f8a189f19f975.setContent(html_333fea91bf6910484ca338a0a3b7640c);
+            
+        
+
+        marker_172215e45f334e73458e6ef971a549ca.bindPopup(popup_f0055cd370e8300b722f8a189f19f975)
+        ;
+
+        
+    
+    
+                marker_172215e45f334e73458e6ef971a549ca.setIcon(icon_b7bc0696621de1e53dd2234ede40220a);
+            
+    
+            var marker_ce38503e1fe326df61244f39ed2bc569 = L.marker(
+                [38.708326, -9.150789],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_81ce6d8f1b986ad48abd0d74cbf0bd88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c47ec91bcdc9c056f26f75a20d2471f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74d48b6f6226254c869cdae60115fc09 = $(`<div id="html_74d48b6f6226254c869cdae60115fc09" style="width: 100.0%; height: 100.0%;"><b>Farfetch</b><br>Address: R. do Instituto Industrial 7, 1200-225 Lisboa, Portugal<br>Employees: 6800</div>`)[0];
+                popup_2c47ec91bcdc9c056f26f75a20d2471f.setContent(html_74d48b6f6226254c869cdae60115fc09);
+            
+        
+
+        marker_ce38503e1fe326df61244f39ed2bc569.bindPopup(popup_2c47ec91bcdc9c056f26f75a20d2471f)
+        ;
+
+        
+    
+    
+                marker_ce38503e1fe326df61244f39ed2bc569.setIcon(icon_81ce6d8f1b986ad48abd0d74cbf0bd88);
+            
+    
+            var marker_d2d12d2e093cdd66f49ed926b6e4aa41 = L.marker(
+                [38.7707773, -9.1040827],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_6c8159856fcb2e19e4240dac848770be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_394c09c7ec458226abef9158aeee632a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fa9dc9f5720879b5c809c72a01cd464 = $(`<div id="html_2fa9dc9f5720879b5c809c72a01cd464" style="width: 100.0%; height: 100.0%;"><b>Bosch</b><br>Address: R. Padre Abel Varzim 25, 1800-220 Lisboa, Portugal<br>Employees: 6584</div>`)[0];
+                popup_394c09c7ec458226abef9158aeee632a.setContent(html_2fa9dc9f5720879b5c809c72a01cd464);
+            
+        
+
+        marker_d2d12d2e093cdd66f49ed926b6e4aa41.bindPopup(popup_394c09c7ec458226abef9158aeee632a)
+        ;
+
+        
+    
+    
+                marker_d2d12d2e093cdd66f49ed926b6e4aa41.setIcon(icon_6c8159856fcb2e19e4240dac848770be);
+            
+    
+            var marker_161f22aace55d86544f6ddc9484b1c67 = L.marker(
+                [38.7246636, -9.1573161],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e8c175b3bcf004d3d582f20434d4fa84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eacd49b1e77aa985a45abe7a6195e08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35ac690171b09a28427c322c11e93bd9 = $(`<div id="html_35ac690171b09a28427c322c11e93bd9" style="width: 100.0%; height: 100.0%;"><b>Deloitte</b><br>Address: Av. Eng. Duarte Pacheco, 1070-100 Lisboa, Portugal<br>Employees: 6000</div>`)[0];
+                popup_2eacd49b1e77aa985a45abe7a6195e08.setContent(html_35ac690171b09a28427c322c11e93bd9);
+            
+        
+
+        marker_161f22aace55d86544f6ddc9484b1c67.bindPopup(popup_2eacd49b1e77aa985a45abe7a6195e08)
+        ;
+
+        
+    
+    
+                marker_161f22aace55d86544f6ddc9484b1c67.setIcon(icon_e8c175b3bcf004d3d582f20434d4fa84);
+            
+    
+            var marker_c912a3ecbbdf4edd0771ea3a21180c8b = L.marker(
+                [38.7078079, -9.151362899999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_4cf3d6b3c70a806462d8c69a4293bd4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b480d029c83bc512df93294b99b50a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4477dee536887bbc934df49cc40c1562 = $(`<div id="html_4477dee536887bbc934df49cc40c1562" style="width: 100.0%; height: 100.0%;"><b>Accenture</b><br>Address: Edifício Santos 37, Boqueirão do Duro 37 D-E, 1200-163 Lisboa, Portugal<br>Employees: 5300</div>`)[0];
+                popup_3b480d029c83bc512df93294b99b50a8.setContent(html_4477dee536887bbc934df49cc40c1562);
+            
+        
+
+        marker_c912a3ecbbdf4edd0771ea3a21180c8b.bindPopup(popup_3b480d029c83bc512df93294b99b50a8)
+        ;
+
+        
+    
+    
+                marker_c912a3ecbbdf4edd0771ea3a21180c8b.setIcon(icon_4cf3d6b3c70a806462d8c69a4293bd4c);
+            
+    
+            var marker_3c87b0b616ca5244d9c1d6e48f61d4fa = L.marker(
+                [38.7372277, -9.2291159],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_96776304605e1e1f2bd63801b1f11d94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38cac2ea4b20f55ac0c8bd97b1429296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5771e13848409a20367443e9dfda019 = $(`<div id="html_f5771e13848409a20367443e9dfda019" style="width: 100.0%; height: 100.0%;"><b>Siemens Portugal</b><br>Address: R. Irmãos Siemens 1, 2720-093 Amadora, Portugal<br>Employees: 4000</div>`)[0];
+                popup_38cac2ea4b20f55ac0c8bd97b1429296.setContent(html_f5771e13848409a20367443e9dfda019);
+            
+        
+
+        marker_3c87b0b616ca5244d9c1d6e48f61d4fa.bindPopup(popup_38cac2ea4b20f55ac0c8bd97b1429296)
+        ;
+
+        
+    
+    
+                marker_3c87b0b616ca5244d9c1d6e48f61d4fa.setIcon(icon_96776304605e1e1f2bd63801b1f11d94);
+            
+    
+            var marker_c6dd162f6bc75847830cc76e23677666 = L.marker(
+                [38.753732, -9.187977000000002],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_966416b376b736c91beb481843e34827 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26ed1fc0dd695869dcfce302955dc4b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_497da289d5f33e99aa70f0837273bbec = $(`<div id="html_497da289d5f33e99aa70f0837273bbec" style="width: 100.0%; height: 100.0%;"><b>Capgemini Portugal</b><br>Address: Avenida Colégio Militar 37F, Torre Colombo Oriente, Piso 10, 1500-180 Lisboa, Portugal<br>Employees: 3600</div>`)[0];
+                popup_26ed1fc0dd695869dcfce302955dc4b4.setContent(html_497da289d5f33e99aa70f0837273bbec);
+            
+        
+
+        marker_c6dd162f6bc75847830cc76e23677666.bindPopup(popup_26ed1fc0dd695869dcfce302955dc4b4)
+        ;
+
+        
+    
+    
+                marker_c6dd162f6bc75847830cc76e23677666.setIcon(icon_966416b376b736c91beb481843e34827);
+            
+    
+            var marker_250e818365da1e4c8ea4176c829e7db5 = L.marker(
+                [38.7692419, -9.100040700000001],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d0dc9703c30a66dfd934493875531681 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c380eccaf289a695e552872dfd0b1afb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b6cb223081aa01c80603384a932a51b = $(`<div id="html_9b6cb223081aa01c80603384a932a51b" style="width: 100.0%; height: 100.0%;"><b>Critical Techworks</b><br>Address: Av. Aquilino Ribeiro Machado 8, 1800-399 Lisboa, Portugal<br>Employees: 2650</div>`)[0];
+                popup_c380eccaf289a695e552872dfd0b1afb.setContent(html_9b6cb223081aa01c80603384a932a51b);
+            
+        
+
+        marker_250e818365da1e4c8ea4176c829e7db5.bindPopup(popup_c380eccaf289a695e552872dfd0b1afb)
+        ;
+
+        
+    
+    
+                marker_250e818365da1e4c8ea4176c829e7db5.setIcon(icon_d0dc9703c30a66dfd934493875531681);
+            
+    
+            var marker_5fcf859a315b2cae63f5c64041d7cad2 = L.marker(
+                [38.7559087, -9.149059],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_0c1940cbd16cb1c7dbea376b8a557ceb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ed32a1367bc85766138c5bf123a8229 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6649909d9d87fa1690f7b2ccbc7664e8 = $(`<div id="html_6649909d9d87fa1690f7b2ccbc7664e8" style="width: 100.0%; height: 100.0%;"><b>Natixis em Portugal</b><br>Address: Av. do Brasil 43, 1700-062 Lisboa, Portugal<br>Employees: 2400</div>`)[0];
+                popup_3ed32a1367bc85766138c5bf123a8229.setContent(html_6649909d9d87fa1690f7b2ccbc7664e8);
+            
+        
+
+        marker_5fcf859a315b2cae63f5c64041d7cad2.bindPopup(popup_3ed32a1367bc85766138c5bf123a8229)
+        ;
+
+        
+    
+    
+                marker_5fcf859a315b2cae63f5c64041d7cad2.setIcon(icon_0c1940cbd16cb1c7dbea376b8a557ceb);
+            
+    
+            var marker_06d09fd6ef682a595230b31246f52534 = L.marker(
+                [38.7396654, -9.1485535],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_bce152b9ecad414a0d96d68d1f0e5f0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03e60055976b5ee92563ae74258d028d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a15d38cb80c443ddfa0a10aac4872d1 = $(`<div id="html_5a15d38cb80c443ddfa0a10aac4872d1" style="width: 100.0%; height: 100.0%;"><b>PrimeIT</b><br>Address: Avenida 5 de Outubro 125 9º, 1050-052 Lisboa, Portugal<br>Employees: 2360</div>`)[0];
+                popup_03e60055976b5ee92563ae74258d028d.setContent(html_5a15d38cb80c443ddfa0a10aac4872d1);
+            
+        
+
+        marker_06d09fd6ef682a595230b31246f52534.bindPopup(popup_03e60055976b5ee92563ae74258d028d)
+        ;
+
+        
+    
+    
+                marker_06d09fd6ef682a595230b31246f52534.setIcon(icon_bce152b9ecad414a0d96d68d1f0e5f0e);
+            
+    
+            var marker_d24528e6d7f2140acf262245afa15e9f = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_09b063a627fb712d8d43170b5a07e665 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df9cf696c646f836ebf81eed4b17b75d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2f966da0664113391811cdc4bd376fc = $(`<div id="html_a2f966da0664113391811cdc4bd376fc" style="width: 100.0%; height: 100.0%;"><b>CGI TI Portugal</b><br>Address: Lisbon, Portugal<br>Employees: 2000</div>`)[0];
+                popup_df9cf696c646f836ebf81eed4b17b75d.setContent(html_a2f966da0664113391811cdc4bd376fc);
+            
+        
+
+        marker_d24528e6d7f2140acf262245afa15e9f.bindPopup(popup_df9cf696c646f836ebf81eed4b17b75d)
+        ;
+
+        
+    
+    
+                marker_d24528e6d7f2140acf262245afa15e9f.setIcon(icon_09b063a627fb712d8d43170b5a07e665);
+            
+    
+            var marker_8d652542a92429fb5877b8b97e14f48d = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_6b0f41d37bda46ebf01b836c99342c52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f76bcac03044098d23587997c767fdba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df24ad655e00ddc065310b0d70fad7c4 = $(`<div id="html_df24ad655e00ddc065310b0d70fad7c4" style="width: 100.0%; height: 100.0%;"><b>OutSystems</b><br>Address: Lisbon, Portugal<br>Employees: 1700</div>`)[0];
+                popup_f76bcac03044098d23587997c767fdba.setContent(html_df24ad655e00ddc065310b0d70fad7c4);
+            
+        
+
+        marker_8d652542a92429fb5877b8b97e14f48d.bindPopup(popup_f76bcac03044098d23587997c767fdba)
+        ;
+
+        
+    
+    
+                marker_8d652542a92429fb5877b8b97e14f48d.setIcon(icon_6b0f41d37bda46ebf01b836c99342c52);
+            
+    
+            var marker_7bf1f65f0f9b674cb652c2542d71d665 = L.marker(
+                [38.7329252, -9.144656099999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_c69b2fe54456bc0937720b964e0451e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff5de285c547f10da7c6e073b8463527 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59553ed283d56336616bf4fff29be4eb = $(`<div id="html_59553ed283d56336616bf4fff29be4eb" style="width: 100.0%; height: 100.0%;"><b>NTT Data</b><br>Address: Atrium Saldanha, Praça Duque de Saldanha 1 10º, 1050-094 Lisboa, Portugal<br>Employees: 1600</div>`)[0];
+                popup_ff5de285c547f10da7c6e073b8463527.setContent(html_59553ed283d56336616bf4fff29be4eb);
+            
+        
+
+        marker_7bf1f65f0f9b674cb652c2542d71d665.bindPopup(popup_ff5de285c547f10da7c6e073b8463527)
+        ;
+
+        
+    
+    
+                marker_7bf1f65f0f9b674cb652c2542d71d665.setIcon(icon_c69b2fe54456bc0937720b964e0451e9);
+            
+    
+            var marker_373aa9c5c1d45658a5888570a5c3880c = L.marker(
+                [38.7717804, -9.0980445],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_cac5e8957b94ae6a755bf2ac0fea9f58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b859f74ffb6e989f8c6fd57d9447aec9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5af8fb78034d7e3b069143afa0a0cce6 = $(`<div id="html_5af8fb78034d7e3b069143afa0a0cce6" style="width: 100.0%; height: 100.0%;"><b>Devoteam Portugal</b><br>Address: Av. Dom João II 43, 1990-084 Lisboa, Portugal<br>Employees: 1500</div>`)[0];
+                popup_b859f74ffb6e989f8c6fd57d9447aec9.setContent(html_5af8fb78034d7e3b069143afa0a0cce6);
+            
+        
+
+        marker_373aa9c5c1d45658a5888570a5c3880c.bindPopup(popup_b859f74ffb6e989f8c6fd57d9447aec9)
+        ;
+
+        
+    
+    
+                marker_373aa9c5c1d45658a5888570a5c3880c.setIcon(icon_cac5e8957b94ae6a755bf2ac0fea9f58);
+            
+    
+            var marker_b2faa72a00f21aad166f5d459e17455e = L.marker(
+                [38.7610168, -9.0944398],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_a955673cca0277eeedeabb0bfb0e06e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e70b1b42fbb5885a470b7e626918484 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8829dd058706f5f7d70abb177c33cf0 = $(`<div id="html_e8829dd058706f5f7d70abb177c33cf0" style="width: 100.0%; height: 100.0%;"><b>Microsoft Portugal</b><br>Address: R. do Fogo de Santelmo 2.07.02, 1990-110 Lisboa, Portugal<br>Employees: 1500</div>`)[0];
+                popup_5e70b1b42fbb5885a470b7e626918484.setContent(html_e8829dd058706f5f7d70abb177c33cf0);
+            
+        
+
+        marker_b2faa72a00f21aad166f5d459e17455e.bindPopup(popup_5e70b1b42fbb5885a470b7e626918484)
+        ;
+
+        
+    
+    
+                marker_b2faa72a00f21aad166f5d459e17455e.setIcon(icon_a955673cca0277eeedeabb0bfb0e06e2);
+            
+    
+            var marker_f986fd88993201c3e17667ed43625311 = L.marker(
+                [38.7353259, -9.1471758],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e6bdcea5f5173565294e9127079a6f81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b75e646aa80affdeab46f10c25641af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9274025fb3e66ca1b4383f1ae92c7913 = $(`<div id="html_9274025fb3e66ca1b4383f1ae92c7913" style="width: 100.0%; height: 100.0%;"><b>Aubay</b><br>Address: Av. Duque de Ávila 46, 1050-083 Lisboa, Portugal<br>Employees: 1450</div>`)[0];
+                popup_4b75e646aa80affdeab46f10c25641af.setContent(html_9274025fb3e66ca1b4383f1ae92c7913);
+            
+        
+
+        marker_f986fd88993201c3e17667ed43625311.bindPopup(popup_4b75e646aa80affdeab46f10c25641af)
+        ;
+
+        
+    
+    
+                marker_f986fd88993201c3e17667ed43625311.setIcon(icon_e6bdcea5f5173565294e9127079a6f81);
+            
+    
+            var marker_886f78caff861db7c539a7eb17bdec8b = L.marker(
+                [38.7439488, -9.1485249],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_0590af5ce073c058075a30344ce661b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e40b1bf601cef29a17dbc0941b9efa0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66b9e8da0ccb78fdbad114733e65a00a = $(`<div id="html_66b9e8da0ccb78fdbad114733e65a00a" style="width: 100.0%; height: 100.0%;"><b>Critical Software</b><br>Address: R. Dr. Eduardo Neves 9, 1050-077 Lisboa, Portugal<br>Employees: 1400</div>`)[0];
+                popup_e40b1bf601cef29a17dbc0941b9efa0a.setContent(html_66b9e8da0ccb78fdbad114733e65a00a);
+            
+        
+
+        marker_886f78caff861db7c539a7eb17bdec8b.bindPopup(popup_e40b1bf601cef29a17dbc0941b9efa0a)
+        ;
+
+        
+    
+    
+                marker_886f78caff861db7c539a7eb17bdec8b.setIcon(icon_0590af5ce073c058075a30344ce661b4);
+            
+    
+            var marker_1c478d3c9c3ff4aed7607b6f12bf89a4 = L.marker(
+                [38.7453247, -9.1455021],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e54d0d833f2011f2144d03a2c6a3dedb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea98c94c9a6efbd4641861b9e36892b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_615eddd8bed906fe658835add5d21e06 = $(`<div id="html_615eddd8bed906fe658835add5d21e06" style="width: 100.0%; height: 100.0%;"><b>Novabase</b><br>Address: R. de Entrecampos 28, 1700-162 Lisboa, Portugal<br>Employees: 1325</div>`)[0];
+                popup_ea98c94c9a6efbd4641861b9e36892b6.setContent(html_615eddd8bed906fe658835add5d21e06);
+            
+        
+
+        marker_1c478d3c9c3ff4aed7607b6f12bf89a4.bindPopup(popup_ea98c94c9a6efbd4641861b9e36892b6)
+        ;
+
+        
+    
+    
+                marker_1c478d3c9c3ff4aed7607b6f12bf89a4.setIcon(icon_e54d0d833f2011f2144d03a2c6a3dedb);
+            
+    
+            var marker_f8c66c7b6529656c48d368790a8f49a5 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e3f0c08709c6970997e82c1b284905ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04944b6bf904c27ec0ba59cf797d3571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe8641f08221c0f3b0ff522fd0cf7665 = $(`<div id="html_fe8641f08221c0f3b0ff522fd0cf7665" style="width: 100.0%; height: 100.0%;"><b>Mindera</b><br>Address: Lisbon, Portugal<br>Employees: 1000</div>`)[0];
+                popup_04944b6bf904c27ec0ba59cf797d3571.setContent(html_fe8641f08221c0f3b0ff522fd0cf7665);
+            
+        
+
+        marker_f8c66c7b6529656c48d368790a8f49a5.bindPopup(popup_04944b6bf904c27ec0ba59cf797d3571)
+        ;
+
+        
+    
+    
+                marker_f8c66c7b6529656c48d368790a8f49a5.setIcon(icon_e3f0c08709c6970997e82c1b284905ca);
+            
+    
+            var marker_bd1793941d195bd7f1b460e80c9bda01 = L.marker(
+                [38.7571197, -9.174658299999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e611b52fa30b40ae3c8bf81ea8724bc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60eda30f911b416c89adc31cfd9ec7aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ab0057d1130393a37f1b1584073bcf2 = $(`<div id="html_2ab0057d1130393a37f1b1584073bcf2" style="width: 100.0%; height: 100.0%;"><b>Noesis</b><br>Address: Torres de Lisboa - Rua Tomás da Fonseca, Torre E, 14º piso, 1600-209 Lisboa, Portugal<br>Employees: 1000</div>`)[0];
+                popup_60eda30f911b416c89adc31cfd9ec7aa.setContent(html_2ab0057d1130393a37f1b1584073bcf2);
+            
+        
+
+        marker_bd1793941d195bd7f1b460e80c9bda01.bindPopup(popup_60eda30f911b416c89adc31cfd9ec7aa)
+        ;
+
+        
+    
+    
+                marker_bd1793941d195bd7f1b460e80c9bda01.setIcon(icon_e611b52fa30b40ae3c8bf81ea8724bc9);
+            
+    
+            var marker_af1c47b60818313be418cb996d4f4255 = L.marker(
+                [38.7226455, -9.2468931],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_754ceef08a9dc9b5a719c91745d7db28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5df18f4d34d088f16e3907f5bdbb7b14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8af8a70e6ac32f7a04de79486d95ecd2 = $(`<div id="html_8af8a70e6ac32f7a04de79486d95ecd2" style="width: 100.0%; height: 100.0%;"><b>Talkdesk</b><br>Address: Edifício Rainbow, R. Amélia Rey Colaço Nº40 4º Piso, 2790-017 Carnaxide, Portugal<br>Employees: 800</div>`)[0];
+                popup_5df18f4d34d088f16e3907f5bdbb7b14.setContent(html_8af8a70e6ac32f7a04de79486d95ecd2);
+            
+        
+
+        marker_af1c47b60818313be418cb996d4f4255.bindPopup(popup_5df18f4d34d088f16e3907f5bdbb7b14)
+        ;
+
+        
+    
+    
+                marker_af1c47b60818313be418cb996d4f4255.setIcon(icon_754ceef08a9dc9b5a719c91745d7db28);
+            
+    
+            var marker_5b24e354fd05a54a4635cf12f9dbd226 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_683096143995b7ffeab95fb295114785 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46978a605a41d39e5d73af49fde87ced = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e62e6d6ec81452dff8e0f7855137345 = $(`<div id="html_8e62e6d6ec81452dff8e0f7855137345" style="width: 100.0%; height: 100.0%;"><b>Blip.pt</b><br>Address: Lisbon, Portugal<br>Employees: 700</div>`)[0];
+                popup_46978a605a41d39e5d73af49fde87ced.setContent(html_8e62e6d6ec81452dff8e0f7855137345);
+            
+        
+
+        marker_5b24e354fd05a54a4635cf12f9dbd226.bindPopup(popup_46978a605a41d39e5d73af49fde87ced)
+        ;
+
+        
+    
+    
+                marker_5b24e354fd05a54a4635cf12f9dbd226.setIcon(icon_683096143995b7ffeab95fb295114785);
+            
+    
+            var marker_7cb1cc5d71f36bb55614225be3432b9f = L.marker(
+                [38.7653129, -9.1001433],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_677d74c72ba8600163ce6b33b1eb7940 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5d222b942ce6755661484e9f69f8d95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1746cd3679dc9b0b789f16607f8dc8b6 = $(`<div id="html_1746cd3679dc9b0b789f16607f8dc8b6" style="width: 100.0%; height: 100.0%;"><b>Feedzai</b><br>Address: Edf. Lumnia, R. António Mega Ferreira 61 4-A, 1800-424 Lisboa, Portugal<br>Employees: 600</div>`)[0];
+                popup_c5d222b942ce6755661484e9f69f8d95.setContent(html_1746cd3679dc9b0b789f16607f8dc8b6);
+            
+        
+
+        marker_7cb1cc5d71f36bb55614225be3432b9f.bindPopup(popup_c5d222b942ce6755661484e9f69f8d95)
+        ;
+
+        
+    
+    
+                marker_7cb1cc5d71f36bb55614225be3432b9f.setIcon(icon_677d74c72ba8600163ce6b33b1eb7940);
+            
+    
+            var marker_da59f5b9eb183de48472e66db7bb09e3 = L.marker(
+                [38.7359534, -9.1450172],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_1d6dc9c1c36b97c8620256f201466152 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e93501f83882a86b0a2749cae5c4dda3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da28eb731dbfdc1c6c05c005e33be4f3 = $(`<div id="html_da28eb731dbfdc1c6c05c005e33be4f3" style="width: 100.0%; height: 100.0%;"><b>Alter Solutions Portugal</b><br>Address: Av. da República 18 15º, 1050-191 Lisboa, Portugal<br>Employees: 600</div>`)[0];
+                popup_e93501f83882a86b0a2749cae5c4dda3.setContent(html_da28eb731dbfdc1c6c05c005e33be4f3);
+            
+        
+
+        marker_da59f5b9eb183de48472e66db7bb09e3.bindPopup(popup_e93501f83882a86b0a2749cae5c4dda3)
+        ;
+
+        
+    
+    
+                marker_da59f5b9eb183de48472e66db7bb09e3.setIcon(icon_1d6dc9c1c36b97c8620256f201466152);
+            
+    
+            var marker_354349dd2ed46a212ebc84feebce457d = L.marker(
+                [38.7721424, -9.0968122],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_ce2097c7f763a20e2cf8e6a4e48d72da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b2b0d47d98524c7fbdb3b27d11ade49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_415402ec2a729c5726771510253c88c0 = $(`<div id="html_415402ec2a729c5726771510253c88c0" style="width: 100.0%; height: 100.0%;"><b>Softinsa</b><br>Address: Edifício Office Oriente, Rua do, R. Mar da China 3 B6, 1990-138 Lisboa, Portugal<br>Employees: 600</div>`)[0];
+                popup_8b2b0d47d98524c7fbdb3b27d11ade49.setContent(html_415402ec2a729c5726771510253c88c0);
+            
+        
+
+        marker_354349dd2ed46a212ebc84feebce457d.bindPopup(popup_8b2b0d47d98524c7fbdb3b27d11ade49)
+        ;
+
+        
+    
+    
+                marker_354349dd2ed46a212ebc84feebce457d.setIcon(icon_ce2097c7f763a20e2cf8e6a4e48d72da);
+            
+    
+            var marker_7765a902586d4afb5c32502615c44efa = L.marker(
+                [38.7195384, -9.1569699],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_3a7d84fd5918735dff7544dbbe8e7a47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_769d940b05166e6c18a5368c9c9eb3ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63f465a0c4d40cad90fe3f72d8f25a9f = $(`<div id="html_63f465a0c4d40cad90fe3f72d8f25a9f" style="width: 100.0%; height: 100.0%;"><b>Volkswagen Digital Solutions</b><br>Address: Rua do Sol ao Rato 11, 1250-077 Lisboa, Portugal<br>Employees: 550</div>`)[0];
+                popup_769d940b05166e6c18a5368c9c9eb3ad.setContent(html_63f465a0c4d40cad90fe3f72d8f25a9f);
+            
+        
+
+        marker_7765a902586d4afb5c32502615c44efa.bindPopup(popup_769d940b05166e6c18a5368c9c9eb3ad)
+        ;
+
+        
+    
+    
+                marker_7765a902586d4afb5c32502615c44efa.setIcon(icon_3a7d84fd5918735dff7544dbbe8e7a47);
+            
+    
+            var marker_07f53e340339c4ac91d336afd8f1d09e = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_2860dd8ebe1c432c2616b437e82037e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e14eda153c5ea5a1da1ff37d54102d66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fed2f4aedb22bd923b29378064c361e1 = $(`<div id="html_fed2f4aedb22bd923b29378064c361e1" style="width: 100.0%; height: 100.0%;"><b>Agap2 IT - Portugal</b><br>Address: Lisbon, Portugal<br>Employees: 500</div>`)[0];
+                popup_e14eda153c5ea5a1da1ff37d54102d66.setContent(html_fed2f4aedb22bd923b29378064c361e1);
+            
+        
+
+        marker_07f53e340339c4ac91d336afd8f1d09e.bindPopup(popup_e14eda153c5ea5a1da1ff37d54102d66)
+        ;
+
+        
+    
+    
+                marker_07f53e340339c4ac91d336afd8f1d09e.setIcon(icon_2860dd8ebe1c432c2616b437e82037e9);
+            
+    
+            var marker_139e312795864134f6b4fd479f01d33d = L.marker(
+                [38.7453921, -9.1455608],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d3cf585ac72ef1805fb0454da190dbdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce5a91f768f5adeeb4b1ab532f96e467 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56435ef479e8e7717719c6198dd2c578 = $(`<div id="html_56435ef479e8e7717719c6198dd2c578" style="width: 100.0%; height: 100.0%;"><b>Sky Portugal</b><br>Address: R. de Entrecampos 28, 1700-158 Lisboa, Portugal<br>Employees: 500</div>`)[0];
+                popup_ce5a91f768f5adeeb4b1ab532f96e467.setContent(html_56435ef479e8e7717719c6198dd2c578);
+            
+        
+
+        marker_139e312795864134f6b4fd479f01d33d.bindPopup(popup_ce5a91f768f5adeeb4b1ab532f96e467)
+        ;
+
+        
+    
+    
+                marker_139e312795864134f6b4fd479f01d33d.setIcon(icon_d3cf585ac72ef1805fb0454da190dbdf);
+            
+    
+            var marker_33e81a5bdebf8793fe3afb53266e56e8 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_ada327747724c77f52609fffdc94531e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3984a3c57bb0157c063f478346df9383 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fe25787e2d1bc29cf7748e8e94f0d7e = $(`<div id="html_3fe25787e2d1bc29cf7748e8e94f0d7e" style="width: 100.0%; height: 100.0%;"><b>Critical Manufacturing</b><br>Address: Lisbon, Portugal<br>Employees: 450</div>`)[0];
+                popup_3984a3c57bb0157c063f478346df9383.setContent(html_3fe25787e2d1bc29cf7748e8e94f0d7e);
+            
+        
+
+        marker_33e81a5bdebf8793fe3afb53266e56e8.bindPopup(popup_3984a3c57bb0157c063f478346df9383)
+        ;
+
+        
+    
+    
+                marker_33e81a5bdebf8793fe3afb53266e56e8.setIcon(icon_ada327747724c77f52609fffdc94531e);
+            
+    
+            var marker_98e80cd8241fa8e921228cdb06066d3e = L.marker(
+                [38.7287221, -9.1462217],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d097133b1f53248e113818fac574bcc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29c5a76230745420edc50a0e8d5038d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09904aa6bd18194a7b8cee86d79eb63b = $(`<div id="html_09904aa6bd18194a7b8cee86d79eb63b" style="width: 100.0%; height: 100.0%;"><b>KCS IT</b><br>Address: R. Sousa Martins 10 Piso 6, 1050-218 Lisboa, Portugal<br>Employees: 410</div>`)[0];
+                popup_29c5a76230745420edc50a0e8d5038d6.setContent(html_09904aa6bd18194a7b8cee86d79eb63b);
+            
+        
+
+        marker_98e80cd8241fa8e921228cdb06066d3e.bindPopup(popup_29c5a76230745420edc50a0e8d5038d6)
+        ;
+
+        
+    
+    
+                marker_98e80cd8241fa8e921228cdb06066d3e.setIcon(icon_d097133b1f53248e113818fac574bcc2);
+            
+    
+            var marker_94c731ab4f00e30fd72eaedda2d98e69 = L.marker(
+                [38.7712933, -9.097969899999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d4ad921bb20e43c6704659ca3091f3b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52a43f46d5edbc6f63adbaa8159c3512 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd9e25f31937820bcd9dc5f1a914782b = $(`<div id="html_dd9e25f31937820bcd9dc5f1a914782b" style="width: 100.0%; height: 100.0%;"><b>Mercedez-Benz.io</b><br>Address: Av. Dom João II 41, 1990-084 Lisboa, Portugal<br>Employees: 300</div>`)[0];
+                popup_52a43f46d5edbc6f63adbaa8159c3512.setContent(html_dd9e25f31937820bcd9dc5f1a914782b);
+            
+        
+
+        marker_94c731ab4f00e30fd72eaedda2d98e69.bindPopup(popup_52a43f46d5edbc6f63adbaa8159c3512)
+        ;
+
+        
+    
+    
+                marker_94c731ab4f00e30fd72eaedda2d98e69.setIcon(icon_d4ad921bb20e43c6704659ca3091f3b4);
+            
+    
+            var marker_d99a32b346877172a1d86ab92b437104 = L.marker(
+                [38.7305167, -9.148325000000002],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_550fd0f1bad957ba755be90b8171f594 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_356d5b8d684deff42842e5035ee83dd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4bc71ac163ab665b0936b9ec62cb510 = $(`<div id="html_e4bc71ac163ab665b0936b9ec62cb510" style="width: 100.0%; height: 100.0%;"><b>Smart Consulting</b><br>Address: Rua Viriato 13E, Edifício Picoas Plaza, Núcleo 6, 3º Dto, 1050-206 Lisboa, Portugal<br>Employees: 250</div>`)[0];
+                popup_356d5b8d684deff42842e5035ee83dd3.setContent(html_e4bc71ac163ab665b0936b9ec62cb510);
+            
+        
+
+        marker_d99a32b346877172a1d86ab92b437104.bindPopup(popup_356d5b8d684deff42842e5035ee83dd3)
+        ;
+
+        
+    
+    
+                marker_d99a32b346877172a1d86ab92b437104.setIcon(icon_550fd0f1bad957ba755be90b8171f594);
+            
+    
+            var marker_1249d94a5724351d52779bfccd83240e = L.marker(
+                [38.7287808, -9.146221599999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e006ae1f89766520a9dd50501a54cebb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b21bd4a8b0211cf989b97f104d4f5d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_481dc0c9a9bfe4a7e39b6f8b2056c2e0 = $(`<div id="html_481dc0c9a9bfe4a7e39b6f8b2056c2e0" style="width: 100.0%; height: 100.0%;"><b>Adentis Portugal</b><br>Address: R. Sousa Martins 10 4ºAndar, 1050-218 Lisboa, Portugal<br>Employees: 241</div>`)[0];
+                popup_5b21bd4a8b0211cf989b97f104d4f5d3.setContent(html_481dc0c9a9bfe4a7e39b6f8b2056c2e0);
+            
+        
+
+        marker_1249d94a5724351d52779bfccd83240e.bindPopup(popup_5b21bd4a8b0211cf989b97f104d4f5d3)
+        ;
+
+        
+    
+    
+                marker_1249d94a5724351d52779bfccd83240e.setIcon(icon_e006ae1f89766520a9dd50501a54cebb);
+            
+    
+            var marker_fbe02ffca13be39157055f46f00ddee2 = L.marker(
+                [38.7326826, -9.1522724],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_95416d7b7de24a7fb62f696ba3a39ad8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74e506ebf0c4c2eb03217787c38d7f25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3278858292f9eb9e621e8d3e510baa82 = $(`<div id="html_3278858292f9eb9e621e8d3e510baa82" style="width: 100.0%; height: 100.0%;"><b>Imaginary Cloud</b><br>Address: Av. António Augusto de Aguiar 108 3rd Floor, 1050-019 Lisboa, Portugal<br>Employees: 64</div>`)[0];
+                popup_74e506ebf0c4c2eb03217787c38d7f25.setContent(html_3278858292f9eb9e621e8d3e510baa82);
+            
+        
+
+        marker_fbe02ffca13be39157055f46f00ddee2.bindPopup(popup_74e506ebf0c4c2eb03217787c38d7f25)
+        ;
+
+        
+    
+    
+                marker_fbe02ffca13be39157055f46f00ddee2.setIcon(icon_95416d7b7de24a7fb62f696ba3a39ad8);
+            
+    
+            var marker_d5527c0b35385152d407b75c164bbb96 = L.marker(
+                [38.72873, -9.1462405],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d95a24f6207240054563b8d903b0818f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c097588829300a7ad06e04edcd7e379a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58a21e7174b7b6c379b0c1252378e470 = $(`<div id="html_58a21e7174b7b6c379b0c1252378e470" style="width: 100.0%; height: 100.0%;"><b>Bee Engineering</b><br>Address: R. Sousa Martins 10 4º Andar, 1050-218 Lisboa, Portugal<br>Employees: 200</div>`)[0];
+                popup_c097588829300a7ad06e04edcd7e379a.setContent(html_58a21e7174b7b6c379b0c1252378e470);
+            
+        
+
+        marker_d5527c0b35385152d407b75c164bbb96.bindPopup(popup_c097588829300a7ad06e04edcd7e379a)
+        ;
+
+        
+    
+    
+                marker_d5527c0b35385152d407b75c164bbb96.setIcon(icon_d95a24f6207240054563b8d903b0818f);
+            
+    
+            var marker_9433402fe1f67cc6092051485003c2ea = L.marker(
+                [38.7613896, -9.0989041],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_fa1a15c91026026c8e0527b315566232 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f4e6bddd945eab1ed0c69b765e01052 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a077181f25daa6a074ef5142c688d8c0 = $(`<div id="html_a077181f25daa6a074ef5142c688d8c0" style="width: 100.0%; height: 100.0%;"><b>Xpand IT</b><br>Address: Edifício Ageas Tejo, Praça Príncipe Perfeito 2 3º piso, 1990-278 Lisboa, Portugal<br>Employees: 350</div>`)[0];
+                popup_1f4e6bddd945eab1ed0c69b765e01052.setContent(html_a077181f25daa6a074ef5142c688d8c0);
+            
+        
+
+        marker_9433402fe1f67cc6092051485003c2ea.bindPopup(popup_1f4e6bddd945eab1ed0c69b765e01052)
+        ;
+
+        
+    
+    
+                marker_9433402fe1f67cc6092051485003c2ea.setIcon(icon_fa1a15c91026026c8e0527b315566232);
+            
+    
+            var marker_64c17d15af34833d7dc607a83bcb342a = L.marker(
+                [38.73293779999999, -9.144652599999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_b84d9b5bf9631341fb0c9bdf70d36855 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5abf11636c61c15f5e3db83a5dfb7b70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08cfe241740460baadacfe9fc6d3d403 = $(`<div id="html_08cfe241740460baadacfe9fc6d3d403" style="width: 100.0%; height: 100.0%;"><b>ITSector</b><br>Address: Edifício Atrium do Saldanha, 1 - 9º A, 1050-094 Lisboa, Portugal<br>Employees: 600</div>`)[0];
+                popup_5abf11636c61c15f5e3db83a5dfb7b70.setContent(html_08cfe241740460baadacfe9fc6d3d403);
+            
+        
+
+        marker_64c17d15af34833d7dc607a83bcb342a.bindPopup(popup_5abf11636c61c15f5e3db83a5dfb7b70)
+        ;
+
+        
+    
+    
+                marker_64c17d15af34833d7dc607a83bcb342a.setIcon(icon_b84d9b5bf9631341fb0c9bdf70d36855);
+            
+    
+            var marker_c2a4248413260a209335ba521b3dc341 = L.marker(
+                [38.7710415, -9.0958133],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_4bd61d1754a9cbdc9008195a90d7cd2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b306acde3b1389234e8017ebde09ac55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3e33db7a936415491794730e65e092b = $(`<div id="html_a3e33db7a936415491794730e65e092b" style="width: 100.0%; height: 100.0%;"><b>WIT Software</b><br>Address: 2, Alameda dos Oceanos 61, 1990-208 Lisboa, Portugal<br>Employees: 350</div>`)[0];
+                popup_b306acde3b1389234e8017ebde09ac55.setContent(html_a3e33db7a936415491794730e65e092b);
+            
+        
+
+        marker_c2a4248413260a209335ba521b3dc341.bindPopup(popup_b306acde3b1389234e8017ebde09ac55)
+        ;
+
+        
+    
+    
+                marker_c2a4248413260a209335ba521b3dc341.setIcon(icon_4bd61d1754a9cbdc9008195a90d7cd2c);
+            
+    
+            var marker_15117f639a5d734472353c310ec8e1cc = L.marker(
+                [38.7426715, -9.147359],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_b05643b87fdbe93310e63feb022e97df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f139d6e570a563fef39ee115f3c9949c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa31e0a19e36f7066373858885289f33 = $(`<div id="html_fa31e0a19e36f7066373858885289f33" style="width: 100.0%; height: 100.0%;"><b>Axians</b><br>Address: Av. República 87, 1050-197 Lisboa, Portugal<br>Employees: 1400</div>`)[0];
+                popup_f139d6e570a563fef39ee115f3c9949c.setContent(html_fa31e0a19e36f7066373858885289f33);
+            
+        
+
+        marker_15117f639a5d734472353c310ec8e1cc.bindPopup(popup_f139d6e570a563fef39ee115f3c9949c)
+        ;
+
+        
+    
+    
+                marker_15117f639a5d734472353c310ec8e1cc.setIcon(icon_b05643b87fdbe93310e63feb022e97df);
+            
+    
+            var marker_77c9149068b8e8737a6bbc9b3a420e33 = L.marker(
+                [38.7290699, -9.1442335],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_de084a268466c1c29749333914e51b43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f98e3ff2151d62901429db7f4c9a93f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ebbeb2063041c59553188badb9f04d2 = $(`<div id="html_5ebbeb2063041c59553188badb9f04d2" style="width: 100.0%; height: 100.0%;"><b>Inetum</b><br>Address: Av. Duque de Loulé 12 4b, 1050-007 Lisboa, Portugal<br>Employees: 2700</div>`)[0];
+                popup_f98e3ff2151d62901429db7f4c9a93f6.setContent(html_5ebbeb2063041c59553188badb9f04d2);
+            
+        
+
+        marker_77c9149068b8e8737a6bbc9b3a420e33.bindPopup(popup_f98e3ff2151d62901429db7f4c9a93f6)
+        ;
+
+        
+    
+    
+                marker_77c9149068b8e8737a6bbc9b3a420e33.setIcon(icon_de084a268466c1c29749333914e51b43);
+            
+    
+            var marker_8ae16ad2e72c5fa09ebc3c13b63def77 = L.marker(
+                [38.7353259, -9.1469525],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_864d47920d47b6b3089ee60ba4a435a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b0b5feb3592ab39b42acd5ecca8404d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e95bf32cd2d984b6af2c1780f15110c = $(`<div id="html_5e95bf32cd2d984b6af2c1780f15110c" style="width: 100.0%; height: 100.0%;"><b>Kwan</b><br>Address: Av. Duque de Ávila 46, 3A, 1050-053, 1050-083 Lisboa, Portugal<br>Employees: 300</div>`)[0];
+                popup_0b0b5feb3592ab39b42acd5ecca8404d.setContent(html_5e95bf32cd2d984b6af2c1780f15110c);
+            
+        
+
+        marker_8ae16ad2e72c5fa09ebc3c13b63def77.bindPopup(popup_0b0b5feb3592ab39b42acd5ecca8404d)
+        ;
+
+        
+    
+    
+                marker_8ae16ad2e72c5fa09ebc3c13b63def77.setIcon(icon_864d47920d47b6b3089ee60ba4a435a9);
+            
+    
+            var marker_6eaa75b7d8174de64b9f2eda675ae31b = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_135ce897fef9377e0143da894c7e852c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d15e14b5453831edb1e16ab86df243d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_595a20d9e32ded5009911e87ce7072c2 = $(`<div id="html_595a20d9e32ded5009911e87ce7072c2" style="width: 100.0%; height: 100.0%;"><b>EDP</b><br>Address: Lisbon, Portugal<br>Employees: 5000</div>`)[0];
+                popup_8d15e14b5453831edb1e16ab86df243d.setContent(html_595a20d9e32ded5009911e87ce7072c2);
+            
+        
+
+        marker_6eaa75b7d8174de64b9f2eda675ae31b.bindPopup(popup_8d15e14b5453831edb1e16ab86df243d)
+        ;
+
+        
+    
+    
+                marker_6eaa75b7d8174de64b9f2eda675ae31b.setIcon(icon_135ce897fef9377e0143da894c7e852c);
+            
+    
+            var marker_573017783299336b928b0d5ed38d82da = L.marker(
+                [38.7397419, -9.1486137],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_3713c67c80d638ca0c560d12751c770d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beda51f478baa270a3a109acbae4db50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_095cfb0b2149858d7849d35a7ff2b0b4 = $(`<div id="html_095cfb0b2149858d7849d35a7ff2b0b4" style="width: 100.0%; height: 100.0%;"><b>Affinity</b><br>Address: Avenida 5 de Outubro 125, 1050-052 Lisboa, Portugal<br>Employees: 370</div>`)[0];
+                popup_beda51f478baa270a3a109acbae4db50.setContent(html_095cfb0b2149858d7849d35a7ff2b0b4);
+            
+        
+
+        marker_573017783299336b928b0d5ed38d82da.bindPopup(popup_beda51f478baa270a3a109acbae4db50)
+        ;
+
+        
+    
+    
+                marker_573017783299336b928b0d5ed38d82da.setIcon(icon_3713c67c80d638ca0c560d12751c770d);
+            
+    
+            var marker_0bf5b19abeafd34a0ed351e25bc0d9c9 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_c9bc4e2037f9485be0842ba9edf17bd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c3bee206569236f931e2be8f927120a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d21d4420e592935e68477545ac455b6 = $(`<div id="html_8d21d4420e592935e68477545ac455b6" style="width: 100.0%; height: 100.0%;"><b>Claranet portugal</b><br>Address: Lisbon, Portugal<br>Employees: 900</div>`)[0];
+                popup_5c3bee206569236f931e2be8f927120a.setContent(html_8d21d4420e592935e68477545ac455b6);
+            
+        
+
+        marker_0bf5b19abeafd34a0ed351e25bc0d9c9.bindPopup(popup_5c3bee206569236f931e2be8f927120a)
+        ;
+
+        
+    
+    
+                marker_0bf5b19abeafd34a0ed351e25bc0d9c9.setIcon(icon_c9bc4e2037f9485be0842ba9edf17bd9);
+            
+    
+            var marker_a8aaa57ea6d3a02f2149ddd16fec3b52 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_fcc76665a8d27eb89a7fc072ea29a914 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0073cec9491144ef278a07c4c10a7725 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8a6d07e6b40923b29d2c841b599b6d7 = $(`<div id="html_e8a6d07e6b40923b29d2c841b599b6d7" style="width: 100.0%; height: 100.0%;"><b>Intellias</b><br>Address: Lisbon, Portugal<br>Employees: 50</div>`)[0];
+                popup_0073cec9491144ef278a07c4c10a7725.setContent(html_e8a6d07e6b40923b29d2c841b599b6d7);
+            
+        
+
+        marker_a8aaa57ea6d3a02f2149ddd16fec3b52.bindPopup(popup_0073cec9491144ef278a07c4c10a7725)
+        ;
+
+        
+    
+    
+                marker_a8aaa57ea6d3a02f2149ddd16fec3b52.setIcon(icon_fcc76665a8d27eb89a7fc072ea29a914);
+            
+    
+            var marker_b7bac255602e075e0bd98390ef9ca0b2 = L.marker(
+                [38.768811, -9.0961404],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_df93c9a5e48b4e1485047cf4cf628002 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17dc3830e2d44f347ad05d04925f2d44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfbed309a349e742d3aab1e49b23c0d6 = $(`<div id="html_bfbed309a349e742d3aab1e49b23c0d6" style="width: 100.0%; height: 100.0%;"><b>Red IT</b><br>Address: Alameda dos Oceanos 1 06 1.1D 3B, 1990-207 Lisboa, Portugal<br>Employees: 120</div>`)[0];
+                popup_17dc3830e2d44f347ad05d04925f2d44.setContent(html_bfbed309a349e742d3aab1e49b23c0d6);
+            
+        
+
+        marker_b7bac255602e075e0bd98390ef9ca0b2.bindPopup(popup_17dc3830e2d44f347ad05d04925f2d44)
+        ;
+
+        
+    
+    
+                marker_b7bac255602e075e0bd98390ef9ca0b2.setIcon(icon_df93c9a5e48b4e1485047cf4cf628002);
+            
+    
+            var marker_5052508480dd50ea9836f8c71e91efdd = L.marker(
+                [38.7180433, -9.144623],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_439949f34433dee9bb3a3935c84dea83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f37673ebf8b5c68fd105ebe2b052c7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c46260240e3e005236a19773fe6264be = $(`<div id="html_c46260240e3e005236a19773fe6264be" style="width: 100.0%; height: 100.0%;"><b>Sword Health</b><br>Address: Praça da Alegria 1 Piso 2, 1269-177 Lisboa, Portugal<br>Employees: 350</div>`)[0];
+                popup_9f37673ebf8b5c68fd105ebe2b052c7e.setContent(html_c46260240e3e005236a19773fe6264be);
+            
+        
+
+        marker_5052508480dd50ea9836f8c71e91efdd.bindPopup(popup_9f37673ebf8b5c68fd105ebe2b052c7e)
+        ;
+
+        
+    
+    
+                marker_5052508480dd50ea9836f8c71e91efdd.setIcon(icon_439949f34433dee9bb3a3935c84dea83);
+            
+    
+            var marker_d141f8ee69d84daa8801bae1a39a2e52 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_558d7a01bdf6142289f53d30b8a68b4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_615e5e078e05adfeb07d2fdbbee97bd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3f7a3a13a30dbddb79dd4981f58c7c4 = $(`<div id="html_c3f7a3a13a30dbddb79dd4981f58c7c4" style="width: 100.0%; height: 100.0%;"><b>Prozis</b><br>Address: Lisbon, Portugal<br>Employees: 1500</div>`)[0];
+                popup_615e5e078e05adfeb07d2fdbbee97bd0.setContent(html_c3f7a3a13a30dbddb79dd4981f58c7c4);
+            
+        
+
+        marker_d141f8ee69d84daa8801bae1a39a2e52.bindPopup(popup_615e5e078e05adfeb07d2fdbbee97bd0)
+        ;
+
+        
+    
+    
+                marker_d141f8ee69d84daa8801bae1a39a2e52.setIcon(icon_558d7a01bdf6142289f53d30b8a68b4d);
+            
+    
+            var marker_0dc7c44b1870e1b626c0ac07aa7b75d9 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_ab0e0dc3453f38620c824e21779980e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed54c77f44916796b0283c91b553755d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7db5bd701162cd9fba53848b9bbb6425 = $(`<div id="html_7db5bd701162cd9fba53848b9bbb6425" style="width: 100.0%; height: 100.0%;"><b>Wellhub (anteriormente Gympass)</b><br>Address: Lisbon, Portugal<br>Employees: 220</div>`)[0];
+                popup_ed54c77f44916796b0283c91b553755d.setContent(html_7db5bd701162cd9fba53848b9bbb6425);
+            
+        
+
+        marker_0dc7c44b1870e1b626c0ac07aa7b75d9.bindPopup(popup_ed54c77f44916796b0283c91b553755d)
+        ;
+
+        
+    
+    
+                marker_0dc7c44b1870e1b626c0ac07aa7b75d9.setIcon(icon_ab0e0dc3453f38620c824e21779980e4);
+            
+    
+            var marker_d813668787495466bfc6e872750ff8bd = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_19c49b2acb2721db95b16cfb9a57a483 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9274988ec0d6c7279e4cf65e977fb7c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_553b527b7f38d14a3b1d5ac1402048cf = $(`<div id="html_553b527b7f38d14a3b1d5ac1402048cf" style="width: 100.0%; height: 100.0%;"><b>Nokia Networks Portugal</b><br>Address: Lisbon, Portugal<br>Employees: 2000</div>`)[0];
+                popup_9274988ec0d6c7279e4cf65e977fb7c5.setContent(html_553b527b7f38d14a3b1d5ac1402048cf);
+            
+        
+
+        marker_d813668787495466bfc6e872750ff8bd.bindPopup(popup_9274988ec0d6c7279e4cf65e977fb7c5)
+        ;
+
+        
+    
+    
+                marker_d813668787495466bfc6e872750ff8bd.setIcon(icon_19c49b2acb2721db95b16cfb9a57a483);
+            
+    
+            var marker_678ec6b4b6ecb7835d8183276ba7074c = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_64e86fed26c08c589ed994d2b27727b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_669be5ec1c55c84cf0445b3f5d53650b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9463a0639a96c54116072e274408b7eb = $(`<div id="html_9463a0639a96c54116072e274408b7eb" style="width: 100.0%; height: 100.0%;"><b>Glintt Global</b><br>Address: Lisbon, Portugal<br>Employees: 1200</div>`)[0];
+                popup_669be5ec1c55c84cf0445b3f5d53650b.setContent(html_9463a0639a96c54116072e274408b7eb);
+            
+        
+
+        marker_678ec6b4b6ecb7835d8183276ba7074c.bindPopup(popup_669be5ec1c55c84cf0445b3f5d53650b)
+        ;
+
+        
+    
+    
+                marker_678ec6b4b6ecb7835d8183276ba7074c.setIcon(icon_64e86fed26c08c589ed994d2b27727b4);
+            
+    
+            var marker_bba66b8c62a29e4e2ad7bcf94a9b578b = L.marker(
+                [38.7327592, -9.1444116],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_4629d4fd160bb70661fd93414c0c8126 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b76001934111c73e66b46151c86ae19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cdb0ae1b06b789f57ffbefd86e23851 = $(`<div id="html_6cdb0ae1b06b789f57ffbefd86e23851" style="width: 100.0%; height: 100.0%;"><b>OLX</b><br>Address: Praça Duque de Saldanha 1 Loja 65 - Piso, 1050-094 Lisboa, Portugal<br>Employees: 300</div>`)[0];
+                popup_7b76001934111c73e66b46151c86ae19.setContent(html_6cdb0ae1b06b789f57ffbefd86e23851);
+            
+        
+
+        marker_bba66b8c62a29e4e2ad7bcf94a9b578b.bindPopup(popup_7b76001934111c73e66b46151c86ae19)
+        ;
+
+        
+    
+    
+                marker_bba66b8c62a29e4e2ad7bcf94a9b578b.setIcon(icon_4629d4fd160bb70661fd93414c0c8126);
+            
+    
+            var marker_d9bd6bda09da6229079a834c5baf06de = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_622318ad926af8cb1d081c4c99e6b0a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b08f0c6d640109303f5257155ae6bfd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ee6742dbb45a9a8a7ee32ba23fd269c = $(`<div id="html_5ee6742dbb45a9a8a7ee32ba23fd269c" style="width: 100.0%; height: 100.0%;"><b>Kuehne+Nagel</b><br>Address: Lisbon, Portugal<br>Employees: 130</div>`)[0];
+                popup_b08f0c6d640109303f5257155ae6bfd1.setContent(html_5ee6742dbb45a9a8a7ee32ba23fd269c);
+            
+        
+
+        marker_d9bd6bda09da6229079a834c5baf06de.bindPopup(popup_b08f0c6d640109303f5257155ae6bfd1)
+        ;
+
+        
+    
+    
+                marker_d9bd6bda09da6229079a834c5baf06de.setIcon(icon_622318ad926af8cb1d081c4c99e6b0a6);
+            
+    
+            var marker_b02f617f4f753439ff7466cf0c5d0c44 = L.marker(
+                [38.7448005, -9.1523562],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_9ff8d9992be46aa128a88f554a53a901 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e27c8efdfe0a49a05c0afdc4494a3c76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4f42014523e28df625ede96ec3e01c8 = $(`<div id="html_b4f42014523e28df625ede96ec3e01c8" style="width: 100.0%; height: 100.0%;"><b>Integer Consulting</b><br>Address: R. Julieta Ferrão 10 8ºDTO, 1600-131 Lisboa, Portugal<br>Employees: 350</div>`)[0];
+                popup_e27c8efdfe0a49a05c0afdc4494a3c76.setContent(html_b4f42014523e28df625ede96ec3e01c8);
+            
+        
+
+        marker_b02f617f4f753439ff7466cf0c5d0c44.bindPopup(popup_e27c8efdfe0a49a05c0afdc4494a3c76)
+        ;
+
+        
+    
+    
+                marker_b02f617f4f753439ff7466cf0c5d0c44.setIcon(icon_9ff8d9992be46aa128a88f554a53a901);
+            
+    
+            var marker_2158f0ecd84ab6e1ad2b2a3647cff80c = L.marker(
+                [38.7367432, -9.3043835],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_37517a55b2ce296ca2e5b56759f8a1d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7ea21b80a66409976c14eda7f517869 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87fee3570515442cf965e2ff7e3ea2c7 = $(`<div id="html_87fee3570515442cf965e2ff7e3ea2c7" style="width: 100.0%; height: 100.0%;"><b>PHC Software</b><br>Address: Av. Prof. Dr. Cavaco Silva 7A, 2740-120 Porto Salvo, Portugal<br>Employees: 262</div>`)[0];
+                popup_b7ea21b80a66409976c14eda7f517869.setContent(html_87fee3570515442cf965e2ff7e3ea2c7);
+            
+        
+
+        marker_2158f0ecd84ab6e1ad2b2a3647cff80c.bindPopup(popup_b7ea21b80a66409976c14eda7f517869)
+        ;
+
+        
+    
+    
+                marker_2158f0ecd84ab6e1ad2b2a3647cff80c.setIcon(icon_37517a55b2ce296ca2e5b56759f8a1d2);
+            
+    
+            var marker_c98c9a457c1feb895618ecdb96ed4d9c = L.marker(
+                [38.7380003, -9.1670844],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_e9c61b6134254f1dbce41354f35fb95d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b054b75c8fd3e55155d96b3dc89ac30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49b13fa6486333c141117fa9d774402f = $(`<div id="html_49b13fa6486333c141117fa9d774402f" style="width: 100.0%; height: 100.0%;"><b>Decskill</b><br>Address: Av. José Malhoa 27 6º andar, 1070-157 Lisboa, Portugal<br>Employees: 300</div>`)[0];
+                popup_4b054b75c8fd3e55155d96b3dc89ac30.setContent(html_49b13fa6486333c141117fa9d774402f);
+            
+        
+
+        marker_c98c9a457c1feb895618ecdb96ed4d9c.bindPopup(popup_4b054b75c8fd3e55155d96b3dc89ac30)
+        ;
+
+        
+    
+    
+                marker_c98c9a457c1feb895618ecdb96ed4d9c.setIcon(icon_e9c61b6134254f1dbce41354f35fb95d);
+            
+    
+            var marker_b9239526b1234507e2b24ca6bf0ce36a = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d22762840aaa79d004eaa269b68dc066 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eefc42b4f012e9024a48f11f3c5350d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a1599a83adbf9a45352951f9c272d5a = $(`<div id="html_0a1599a83adbf9a45352951f9c272d5a" style="width: 100.0%; height: 100.0%;"><b>Revolut</b><br>Address: Lisbon, Portugal<br>Employees: 1300</div>`)[0];
+                popup_eefc42b4f012e9024a48f11f3c5350d6.setContent(html_0a1599a83adbf9a45352951f9c272d5a);
+            
+        
+
+        marker_b9239526b1234507e2b24ca6bf0ce36a.bindPopup(popup_eefc42b4f012e9024a48f11f3c5350d6)
+        ;
+
+        
+    
+    
+                marker_b9239526b1234507e2b24ca6bf0ce36a.setIcon(icon_d22762840aaa79d004eaa269b68dc066);
+            
+    
+            var marker_27c2010a57164a5b05c11dcc3899eb9f = L.marker(
+                [38.7306314, -9.1483907],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_b9168938ab42e8286f6ad04f36132ca9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_633b56acd0d279d9d8f85cd7aec145ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b85e3f315ffddcbdcd43a85755a4f7d0 = $(`<div id="html_b85e3f315ffddcbdcd43a85755a4f7d0" style="width: 100.0%; height: 100.0%;"><b>Innotech.pt</b><br>Address: Rua Viriato 13E Edifício Picoas Plaza - Núcleo 6, 4ºD, 1050-206 Lisboa, Portugal<br>Employees: 160</div>`)[0];
+                popup_633b56acd0d279d9d8f85cd7aec145ad.setContent(html_b85e3f315ffddcbdcd43a85755a4f7d0);
+            
+        
+
+        marker_27c2010a57164a5b05c11dcc3899eb9f.bindPopup(popup_633b56acd0d279d9d8f85cd7aec145ad)
+        ;
+
+        
+    
+    
+                marker_27c2010a57164a5b05c11dcc3899eb9f.setIcon(icon_b9168938ab42e8286f6ad04f36132ca9);
+            
+    
+            var marker_f3ea08ea486df2e8bfcfffeddea252c4 = L.marker(
+                [38.7018409, -9.17687],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_80754f0e83af9a50d40ed4ef10a48b7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92fd0a1ead40938376360a3318625495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b833f839e41750cf0102bb7982469043 = $(`<div id="html_b833f839e41750cf0102bb7982469043" style="width: 100.0%; height: 100.0%;"><b>Cloudfare</b><br>Address: Av. da Índia 10, Torre B 6º Piso, 1300-299 Lisboa, Portugal<br>Employees: 340</div>`)[0];
+                popup_92fd0a1ead40938376360a3318625495.setContent(html_b833f839e41750cf0102bb7982469043);
+            
+        
+
+        marker_f3ea08ea486df2e8bfcfffeddea252c4.bindPopup(popup_92fd0a1ead40938376360a3318625495)
+        ;
+
+        
+    
+    
+                marker_f3ea08ea486df2e8bfcfffeddea252c4.setIcon(icon_80754f0e83af9a50d40ed4ef10a48b7b);
+            
+    
+            var marker_3cbde0170657d8df816d074c56532ecb = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_4a2d8005b05e03757acef29d95d92594 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10bebf1205d3ed9d71a983644885ea36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_879fc20dddf1d26c809527cf5b3219d5 = $(`<div id="html_879fc20dddf1d26c809527cf5b3219d5" style="width: 100.0%; height: 100.0%;"><b>Olisipo</b><br>Address: Lisbon, Portugal<br>Employees: 700</div>`)[0];
+                popup_10bebf1205d3ed9d71a983644885ea36.setContent(html_879fc20dddf1d26c809527cf5b3219d5);
+            
+        
+
+        marker_3cbde0170657d8df816d074c56532ecb.bindPopup(popup_10bebf1205d3ed9d71a983644885ea36)
+        ;
+
+        
+    
+    
+                marker_3cbde0170657d8df816d074c56532ecb.setIcon(icon_4a2d8005b05e03757acef29d95d92594);
+            
+    
+            var marker_340632621ae09f82546450bd533c942c = L.marker(
+                [38.7447092, -9.1599878],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_f314540bdb312d1380f63120df240c0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d190361b0a807cc9a4fb60d8080f929c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c07ee2981dee3486d70ee351962f5c15 = $(`<div id="html_c07ee2981dee3486d70ee351962f5c15" style="width: 100.0%; height: 100.0%;"><b>Multivision</b><br>Address: R. Soeiro Pereira Gomes 1 10, 1600-196 Lisboa, Portugal<br>Employees: 184</div>`)[0];
+                popup_d190361b0a807cc9a4fb60d8080f929c.setContent(html_c07ee2981dee3486d70ee351962f5c15);
+            
+        
+
+        marker_340632621ae09f82546450bd533c942c.bindPopup(popup_d190361b0a807cc9a4fb60d8080f929c)
+        ;
+
+        
+    
+    
+                marker_340632621ae09f82546450bd533c942c.setIcon(icon_f314540bdb312d1380f63120df240c0f);
+            
+    
+            var marker_5e8dd9118cbe70894ba28b84b8957123 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_b3558b8e0251765be8f2f1e5b8cb37aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95c7eaf2047369cf8636fba95a6cd734 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4de1fb452ae51cfdba29ae61c9cab75 = $(`<div id="html_a4de1fb452ae51cfdba29ae61c9cab75" style="width: 100.0%; height: 100.0%;"><b>Banco de Portugal</b><br>Address: Lisbon, Portugal<br>Employees: 1700</div>`)[0];
+                popup_95c7eaf2047369cf8636fba95a6cd734.setContent(html_a4de1fb452ae51cfdba29ae61c9cab75);
+            
+        
+
+        marker_5e8dd9118cbe70894ba28b84b8957123.bindPopup(popup_95c7eaf2047369cf8636fba95a6cd734)
+        ;
+
+        
+    
+    
+                marker_5e8dd9118cbe70894ba28b84b8957123.setIcon(icon_b3558b8e0251765be8f2f1e5b8cb37aa);
+            
+    
+            var marker_a6aada4102e89523f49619021a4daab6 = L.marker(
+                [38.728527, -9.1468019],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_fc05cd6b1259b2fc41bf1d52e7280703 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_543203a02d72e1a5fffca34c6073f3fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf3b32516e2b08f9c98b6603159b0db4 = $(`<div id="html_bf3b32516e2b08f9c98b6603159b0db4" style="width: 100.0%; height: 100.0%;"><b>PwC Portugal</b><br>Address: Palácio Sottomayor, Av. Fontes Pereira de Melo nº16, 1050-121 Lisboa, Portugal<br>Employees: 2900</div>`)[0];
+                popup_543203a02d72e1a5fffca34c6073f3fb.setContent(html_bf3b32516e2b08f9c98b6603159b0db4);
+            
+        
+
+        marker_a6aada4102e89523f49619021a4daab6.bindPopup(popup_543203a02d72e1a5fffca34c6073f3fb)
+        ;
+
+        
+    
+    
+                marker_a6aada4102e89523f49619021a4daab6.setIcon(icon_fc05cd6b1259b2fc41bf1d52e7280703);
+            
+    
+            var marker_adcc80eeb941b6315239060e222abbed = L.marker(
+                [38.7579976, -9.1405903],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_4a5b9b2909be75a63cfb7e229c430cd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_948ab0473e6bdca2d320ff0e7f0557fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6719153a1ca7ab593e2a47a04df19619 = $(`<div id="html_6719153a1ca7ab593e2a47a04df19619" style="width: 100.0%; height: 100.0%;"><b>Altice Labs</b><br>Address: Av. Rio de Janeiro 66, 1700-338 Lisboa, Portugal<br>Employees: 700</div>`)[0];
+                popup_948ab0473e6bdca2d320ff0e7f0557fe.setContent(html_6719153a1ca7ab593e2a47a04df19619);
+            
+        
+
+        marker_adcc80eeb941b6315239060e222abbed.bindPopup(popup_948ab0473e6bdca2d320ff0e7f0557fe)
+        ;
+
+        
+    
+    
+                marker_adcc80eeb941b6315239060e222abbed.setIcon(icon_4a5b9b2909be75a63cfb7e229c430cd8);
+            
+    
+            var marker_a6e2d0caa96a1283c02de65a7869478d = L.marker(
+                [38.7404546, -9.229695099999999],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_c36cc63449cd7b2d2d3c003246cd7ccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49e6d33fe97b174b2357ba27dcadbef3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dc9d7cee9e0843526c52797f235e08f = $(`<div id="html_4dc9d7cee9e0843526c52797f235e08f" style="width: 100.0%; height: 100.0%;"><b>Syone</b><br>Address: Ed. Stern 3D, R. Alfredo da Silva 8A, 2610-016 Lisboa, Portugal<br>Employees: 200</div>`)[0];
+                popup_49e6d33fe97b174b2357ba27dcadbef3.setContent(html_4dc9d7cee9e0843526c52797f235e08f);
+            
+        
+
+        marker_a6e2d0caa96a1283c02de65a7869478d.bindPopup(popup_49e6d33fe97b174b2357ba27dcadbef3)
+        ;
+
+        
+    
+    
+                marker_a6e2d0caa96a1283c02de65a7869478d.setIcon(icon_c36cc63449cd7b2d2d3c003246cd7ccd);
+            
+    
+            var marker_d5987f41353c768d15c64a7ff84cc289 = L.marker(
+                [38.7110179, -9.1424372],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_8e74d62a8b43879f65a7e9ec9b3c3c03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ed7cbace8b55cfc1feb130a8e3c16b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_843dc1616ec28b744cb7a12eb31bfc63 = $(`<div id="html_843dc1616ec28b744cb7a12eb31bfc63" style="width: 100.0%; height: 100.0%;"><b>tb.lx</b><br>Address: R. Nova da Trindade 3, 1200-301 Lisboa, Portugal<br>Employees: 130</div>`)[0];
+                popup_6ed7cbace8b55cfc1feb130a8e3c16b6.setContent(html_843dc1616ec28b744cb7a12eb31bfc63);
+            
+        
+
+        marker_d5987f41353c768d15c64a7ff84cc289.bindPopup(popup_6ed7cbace8b55cfc1feb130a8e3c16b6)
+        ;
+
+        
+    
+    
+                marker_d5987f41353c768d15c64a7ff84cc289.setIcon(icon_8e74d62a8b43879f65a7e9ec9b3c3c03);
+            
+    
+            var marker_8c696c3fba9320d03f1651b798e61f65 = L.marker(
+                [38.7233826, -9.1633661],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_426f867b9b1248377899b97fa3a991d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3487d34946ee48d9380caefaf5a7971e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4dd4b15a0f4806d6845236f708315db = $(`<div id="html_d4dd4b15a0f4806d6845236f708315db" style="width: 100.0%; height: 100.0%;"><b>NOS</b><br>Address: CC Amoreiras Shopping Center, Av. Eng. Duarte Pacheco lj. 1109, 1070-103 Lisboa, Portugal<br>Employees: 2400</div>`)[0];
+                popup_3487d34946ee48d9380caefaf5a7971e.setContent(html_d4dd4b15a0f4806d6845236f708315db);
+            
+        
+
+        marker_8c696c3fba9320d03f1651b798e61f65.bindPopup(popup_3487d34946ee48d9380caefaf5a7971e)
+        ;
+
+        
+    
+    
+                marker_8c696c3fba9320d03f1651b798e61f65.setIcon(icon_426f867b9b1248377899b97fa3a991d8);
+            
+    
+            var marker_4777d234f24e4da6d9cb78d3c347db0c = L.marker(
+                [38.76369, -9.098339900000001],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_d8e818c12d025be8e13c354e6023f714 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1aff73b0b610dae643b2a134a3e1d88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d519f795d12068da2234eb1e0ee3ba1 = $(`<div id="html_5d519f795d12068da2234eb1e0ee3ba1" style="width: 100.0%; height: 100.0%;"><b>HN Services</b><br>Address: Av. Dom João II 11, Torre A 11º Piso, 1990-077 Lisboa, Portugal<br>Employees: 200</div>`)[0];
+                popup_d1aff73b0b610dae643b2a134a3e1d88.setContent(html_5d519f795d12068da2234eb1e0ee3ba1);
+            
+        
+
+        marker_4777d234f24e4da6d9cb78d3c347db0c.bindPopup(popup_d1aff73b0b610dae643b2a134a3e1d88)
+        ;
+
+        
+    
+    
+                marker_4777d234f24e4da6d9cb78d3c347db0c.setIcon(icon_d8e818c12d025be8e13c354e6023f714);
+            
+    
+            var marker_166939fc458bed6abe9fe5a70bf34ae2 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_74abe8128f8a5f174c56629df5ee0de4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f89513a9c900a60a0f0771d1a270ef4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81f0c27712de244ee2211518c328fb02 = $(`<div id="html_81f0c27712de244ee2211518c328fb02" style="width: 100.0%; height: 100.0%;"><b>360 Imprimir</b><br>Address: Lisbon, Portugal<br>Employees: 175</div>`)[0];
+                popup_f89513a9c900a60a0f0771d1a270ef4a.setContent(html_81f0c27712de244ee2211518c328fb02);
+            
+        
+
+        marker_166939fc458bed6abe9fe5a70bf34ae2.bindPopup(popup_f89513a9c900a60a0f0771d1a270ef4a)
+        ;
+
+        
+    
+    
+                marker_166939fc458bed6abe9fe5a70bf34ae2.setIcon(icon_74abe8128f8a5f174c56629df5ee0de4);
+            
+    
+            var marker_6b633daf89c1b0d7fe0d4a0f9a7a3e73 = L.marker(
+                [38.70433939999999, -9.1677674],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_16c09e692dc433b5be9d5e6cb1cf9264 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_781963a7038053d5f00ccfb62f0bee4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8deb11ec6ae25e224e9676cf1c00dffe = $(`<div id="html_8deb11ec6ae25e224e9676cf1c00dffe" style="width: 100.0%; height: 100.0%;"><b>TIMWETECH</b><br>Address: Av. Infante Santo 2H 3rd floor, 1350-178 Lisboa, Portugal<br>Employees: 600</div>`)[0];
+                popup_781963a7038053d5f00ccfb62f0bee4d.setContent(html_8deb11ec6ae25e224e9676cf1c00dffe);
+            
+        
+
+        marker_6b633daf89c1b0d7fe0d4a0f9a7a3e73.bindPopup(popup_781963a7038053d5f00ccfb62f0bee4d)
+        ;
+
+        
+    
+    
+                marker_6b633daf89c1b0d7fe0d4a0f9a7a3e73.setIcon(icon_16c09e692dc433b5be9d5e6cb1cf9264);
+            
+    
+            var marker_abc0edef09b51e6c95d1e50789e2e257 = L.marker(
+                [38.7222524, -9.1393366],
+                {
+}
+            ).addTo(marker_cluster_8f12a700bee62c35da810c7e6f440be8);
+        
+    
+            var icon_8792f046cc64459ecda02b93d6905968 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d4b1e5343d54363314fe44c5e5c24d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1759602a06d3b4a0e63f1c3e13aacaa8 = $(`<div id="html_1759602a06d3b4a0e63f1c3e13aacaa8" style="width: 100.0%; height: 100.0%;"><b>Miniclip</b><br>Address: Lisbon, Portugal<br>Employees: 277</div>`)[0];
+                popup_3d4b1e5343d54363314fe44c5e5c24d2.setContent(html_1759602a06d3b4a0e63f1c3e13aacaa8);
+            
+        
+
+        marker_abc0edef09b51e6c95d1e50789e2e257.bindPopup(popup_3d4b1e5343d54363314fe44c5e5c24d2)
+        ;
+
+        
+    
+    
+                marker_abc0edef09b51e6c95d1e50789e2e257.setIcon(icon_8792f046cc64459ecda02b93d6905968);
+            
+    
+            marker_cluster_8f12a700bee62c35da810c7e6f440be8.addTo(map_3533665a7043b88499e10cb7e20cfad5);
+        
+</script>
+</html>
