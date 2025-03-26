@@ -21,7 +21,7 @@ For each company in the input file this output file contains the address and gps
 2 html files: one with locations of the companies with clusters of companies that adapt as the user gets closer to the address, another file with circles with radius adjusted to the number of workers of the company.
 
 
-# usage
+# Usage
 
 To install requirements run:
 
